@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codex Free Website | Build your site and publish it for free</title>
+    <title>Free Website Starter for Codex + GitHub Pages | No-Framework Template</title>
     <meta
       name="description"
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
+      content="Launch a free personal website with Codex, GitHub Pages, and your own domain. Clone a no-framework HTML, CSS, and JavaScript starter and publish in minutes."
     />
+    <meta name="application-name" content="Codex Free Website" />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://danlex.github.io/codex-free-website/" />
     <meta name="theme-color" content="#101010" />
     <meta name="author" content="danlex" />
     <meta
       property="og:title"
-      content="Codex Free Website | Build your site and publish it for free"
+      content="Free Website Starter for Codex + GitHub Pages"
     />
     <meta
       property="og:description"
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
+      content="Clone a no-framework website starter, customize it in Codex, publish on GitHub Pages, and connect your own domain."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://danlex.github.io/codex-free-website/" />
@@ -27,17 +28,18 @@
       property="og:image"
       content="https://danlex.github.io/codex-free-website/og-image.png"
     />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="Codex Free Website" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Codex Free Website | Build your site and publish it for free"
+      content="Free Website Starter for Codex + GitHub Pages"
     />
     <meta
       name="twitter:description"
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
+      content="Clone a no-framework website starter, customize it in Codex, publish on GitHub Pages, and connect your own domain."
     />
     <meta
       name="twitter:image"
@@ -59,40 +61,74 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Build a free website with Codex and GitHub Pages",
-        "description": "A no-framework starter for publishing a website for free with GitHub Pages and your own domain.",
-        "url": "https://danlex.github.io/codex-free-website/",
-        "totalTime": "PT30M",
-        "tool": [
-          "Codex",
-          "GitHub",
-          "GitHub Pages"
-        ],
-        "step": [
+        "@graph": [
           {
-            "@type": "HowToStep",
-            "name": "Clone the repo"
+            "@type": "WebSite",
+            "name": "Codex Free Website",
+            "url": "https://danlex.github.io/codex-free-website/",
+            "description": "A free no-framework website starter for Codex and GitHub Pages.",
+            "inLanguage": "en",
+            "publisher": {
+              "@type": "Organization",
+              "name": "TVL Tech",
+              "url": "https://www.tvl.tech/"
+            }
           },
           {
-            "@type": "HowToStep",
-            "name": "Edit the starter files"
+            "@type": "SoftwareSourceCode",
+            "name": "Codex Free Website",
+            "codeRepository": "https://github.com/danlex/codex-free-website",
+            "url": "https://danlex.github.io/codex-free-website/",
+            "description": "A no-framework HTML, CSS, and JavaScript starter for launching a personal website on GitHub Pages.",
+            "programmingLanguage": [
+              "HTML",
+              "CSS",
+              "JavaScript"
+            ],
+            "runtimePlatform": "GitHub Pages",
+            "license": "https://github.com/danlex/codex-free-website/blob/main/LICENSE",
+            "creator": {
+              "@type": "Person",
+              "name": "danlex"
+            }
           },
           {
-            "@type": "HowToStep",
-            "name": "Customize the site in Codex"
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Push to GitHub"
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Enable GitHub Pages"
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Connect your custom domain"
+            "@type": "HowTo",
+            "name": "Launch a free website with Codex and GitHub Pages",
+            "description": "Clone a no-framework website starter, customize it in Codex, publish it on GitHub Pages, and connect your own domain.",
+            "url": "https://danlex.github.io/codex-free-website/",
+            "totalTime": "PT30M",
+            "tool": [
+              "Codex",
+              "GitHub",
+              "GitHub Pages"
+            ],
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Clone the repo"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Edit the starter files"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Customize the site in Codex"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Push to GitHub"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Enable GitHub Pages"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Connect your custom domain"
+              }
+            ]
           }
         ]
       }
@@ -109,7 +145,7 @@
         <nav class="topbar">
           <a class="brand" href="#top">CODEX FREE WEBSITE</a>
           <div class="nav-links">
-            <a href="#stacks">Stacks</a>
+            <a href="#stacks">Starter</a>
             <a href="#steps">Steps</a>
             <a href="#domain">Domain</a>
             <a href="#publish">Publish</a>
@@ -119,25 +155,26 @@
 
         <div class="hero-grid" id="top">
           <div class="hero-copy">
-            <p class="eyebrow">Step-by-step explainer</p>
-            <h1>Build your site. Ship it free. Put your domain on it.</h1>
+            <p class="eyebrow">No-framework website starter</p>
+            <h1>Launch a free website with Codex and GitHub Pages.</h1>
             <p class="lead">
-              This repo is built around one clear path: a no-framework website
-              starter you can edit in Codex and publish directly on GitHub
-              Pages.
+              Clone a plain HTML, CSS, and JavaScript starter, customize it in
+              Codex, publish it on GitHub Pages, and point your own domain at
+              it.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#steps">See the steps</a>
-              <a class="button secondary" href="QUICKSTART.md">Read quickstart</a>
               <a
-                class="button tertiary"
+                class="button primary"
                 href="https://github.com/danlex/codex-free-website"
-                >View repo</a
+                >Open GitHub Starter</a
               >
+              <a class="button secondary" href="#steps">See the 6-step flow</a>
+              <a class="button tertiary" href="QUICKSTART.md">Read quickstart</a>
             </div>
             <div class="hero-meta">
-              <div class="meta-pill">Codex</div>
-              <div class="meta-pill">GitHub</div>
+              <div class="meta-pill">Plain HTML</div>
+              <div class="meta-pill">CSS</div>
+              <div class="meta-pill">JavaScript</div>
               <div class="meta-pill">GitHub Pages</div>
               <div class="meta-pill">Custom Domain</div>
             </div>
@@ -157,17 +194,17 @@
               <div class="showcase-body">
                 <div class="showcase-primary">
                   <div class="signal-line"></div>
-                  <p class="mini-label">Default path: No framework</p>
-                  <h2>No framework first.</h2>
+                  <p class="mini-label">Included in the repo</p>
+                  <h2>Start simple. Ship the first version.</h2>
                   <p class="mini-note">
-                    Most people do not need extra setup to launch a strong
-                    personal website. Start with the lowest-friction path and
-                    keep the stack simple.
+                    Keep the first release lightweight: edit plain files, push
+                    to GitHub, enable Pages, and connect a domain when you are
+                    ready.
                   </p>
                   <ul class="mini-list">
-                    <li>No install step</li>
-                    <li>No build setup</li>
-                    <li>Direct branch deploy on GitHub Pages</li>
+                    <li><code>index.html</code>, <code>styles.css</code>, and <code>script.js</code></li>
+                    <li>A quickstart and GitHub Pages publish flow</li>
+                    <li>Prompts and launch assets for customization</li>
                   </ul>
                 </div>
 
@@ -176,7 +213,7 @@
                     <p class="terminal-label">Quickstart</p>
                     <div class="terminal-steps">
                       <div class="terminal-step">
-                        <span class="terminal-step-label">Clone</span>
+                        <span class="terminal-step-label">Clone repo</span>
                         <code>git clone https://github.com/danlex/codex-free-website.git</code>
                       </div>
                       <div class="terminal-step">
@@ -184,14 +221,14 @@
                         <code>cd codex-free-website</code>
                       </div>
                       <div class="terminal-step">
-                        <span class="terminal-step-label">Push changes</span>
+                        <span class="terminal-step-label">Push live</span>
                         <code>git push</code>
                       </div>
                     </div>
                   </div>
                   <div class="domain-card-mini">
                     <span class="domain-pill">Custom domain</span>
-                    <p>Add `CNAME`, update DNS, enable HTTPS.</p>
+                    <p>Add <code>CNAME</code>, point DNS, and let GitHub Pages issue HTTPS.</p>
                   </div>
                 </div>
               </div>
@@ -199,8 +236,8 @@
 
             <div class="hero-stats">
               <div>
-                <strong>01</strong>
-                <span>stack choice</span>
+                <strong>3</strong>
+                <span>starter files</span>
               </div>
               <div>
                 <strong>06</strong>
@@ -219,69 +256,71 @@
         <section class="signal-strip">
           <article class="signal-card">
             <p class="stack-index">01</p>
-            <h3>Edit plain files</h3>
-            <p>Everything stays in HTML, CSS, and JavaScript so the handoff is easy.</p>
+            <h3>No build step</h3>
+            <p>Publish directly from the root branch on GitHub Pages with no framework or deploy pipeline.</p>
           </article>
           <article class="signal-card">
             <p class="stack-index">02</p>
-            <h3>Publish from root</h3>
-            <p>No build pipeline. Push `main`, enable Pages, and the site goes live.</p>
+            <h3>SEO basics included</h3>
+            <p>Start with the essentials already wired in: title, description, social tags, schema, favicon, and manifest.</p>
           </article>
           <article class="signal-card">
             <p class="stack-index">03</p>
-            <h3>Use your domain</h3>
-            <p>GitHub Pages plus a `CNAME` file gives you a clean path to your own URL.</p>
+            <h3>Own the result</h3>
+            <p>Edit plain files you can actually understand later, then connect your own domain when the site is ready.</p>
           </article>
         </section>
 
         <section class="panel" id="stacks">
           <div class="section-heading">
-            <p class="section-label">Why this setup</p>
-            <h2>One stack. Less friction. Faster shipping.</h2>
+            <p class="section-label">What you get</p>
+            <h2>A starter that is small enough to finish.</h2>
           </div>
 
           <div class="stack-grid">
             <article class="stack-card featured">
               <p class="stack-index">01</p>
-              <h3>No framework</h3>
+              <h3>Plain starter files</h3>
               <p>
-                Best for most users. Edit HTML, CSS, and JavaScript directly.
-                Push to GitHub. Enable Pages. Done.
+                The core site stays in <code>index.html</code>,
+                <code>styles.css</code>, and <code>script.js</code>, which
+                makes edits fast in Codex and ownership straightforward later.
               </p>
-              <span class="chip">Default</span>
+              <span class="chip">Core files</span>
             </article>
 
             <article class="stack-card">
               <p class="stack-index">02</p>
-              <h3>No install step</h3>
+              <h3>GitHub Pages publish path</h3>
               <p>
-                You can open the repo, change the files, and publish without
-                setting up a framework or build toolchain.
+                The repo is designed around the fastest free hosting flow:
+                create a repo, push <code>main</code>, enable Pages, and
+                connect a custom domain.
               </p>
-              <span class="chip chip-soft">Simple</span>
+              <span class="chip chip-soft">Pages-ready</span>
             </article>
 
             <article class="stack-card">
               <p class="stack-index">03</p>
-              <h3>GitHub Pages friendly</h3>
+              <h3>Launch assets</h3>
               <p>
-                The whole flow is designed for a static site hosted for free,
-                with a clean path to your own domain.
+                You also get a quickstart guide, a starter Codex prompt, and
+                LinkedIn launch content so the repo is easier to ship and share.
               </p>
-              <span class="chip chip-dark">Free hosting</span>
+              <span class="chip chip-dark">Included</span>
             </article>
           </div>
           <div class="decision-banner">
             <span>Rule of thumb</span>
-            Keep the stack boring. Use plain HTML, CSS, and JavaScript so the
-            setup stays teachable, editable, and easy to publish.
+            If the site is mostly content, links, and a few sections, keep it
+            no-framework until there is a real reason to add more complexity.
           </div>
         </section>
 
         <section class="panel accent" id="steps">
           <div class="section-heading">
             <p class="section-label">The flow</p>
-            <h2>From clone to live site in six steps.</h2>
+            <h2>From clone to live domain in six steps.</h2>
           </div>
 
           <div class="timeline">
@@ -322,7 +361,8 @@ script.js</code></pre>
                 </p>
                 <p class="inline-note">
                   Good prompt: “Turn this into a personal website for [name], a
-                  [role]. Keep it compatible with GitHub Pages.”
+                  [role]. Update the hero, SEO copy, links, and sections. Keep
+                  it compatible with GitHub Pages.”
                 </p>
               </div>
             </article>
@@ -332,7 +372,7 @@ script.js</code></pre>
               <div class="timeline-copy">
                 <h3>Push to GitHub</h3>
                 <p>
-                  Create a new repo, commit the files, and push `main`.
+                  Create a new repo, commit the files, and push <code>main</code>.
                 </p>
                 <pre><code>git init
 git add .
@@ -352,9 +392,9 @@ git push -u origin main</code></pre>
                   build step.
                 </p>
                 <ul class="step-list">
-                  <li>Open `Settings` → `Pages`</li>
-                  <li>Choose `Deploy from a branch`</li>
-                  <li>Select `main` and `/ (root)`</li>
+                  <li>Open <code>Settings</code> → <code>Pages</code></li>
+                  <li>Choose <code>Deploy from a branch</code></li>
+                  <li>Select <code>main</code> and <code>/ (root)</code></li>
                 </ul>
               </div>
             </article>
@@ -364,8 +404,9 @@ git push -u origin main</code></pre>
               <div class="timeline-copy">
                 <h3>Connect the custom domain</h3>
                 <p>
-                  Rename `CNAME.example` to `CNAME`, put the domain in the file,
-                  update DNS, then enable HTTPS in GitHub Pages.
+                  Rename <code>CNAME.example</code> to <code>CNAME</code>, put
+                  the domain in the file, update DNS, then enable HTTPS in
+                  GitHub Pages.
                 </p>
               </div>
             </article>
@@ -375,23 +416,25 @@ git push -u origin main</code></pre>
         <section class="panel" id="domain">
           <div class="section-heading">
             <p class="section-label">Domain setup</p>
-            <h2>The last 10 percent that makes it feel real.</h2>
+            <h2>Connect your domain without changing the stack.</h2>
           </div>
 
           <div class="domain-grid">
             <article class="domain-card">
               <h3>Subdomain</h3>
               <p>
-                For `www.yourdomain.com`, add a `CNAME` record pointing `www` to
-                `your-username.github.io`.
+                For <code>www.yourdomain.com</code>, add a <code>CNAME</code>
+                record pointing <code>www</code> to
+                <code>your-username.github.io</code>.
               </p>
             </article>
 
             <article class="domain-card">
               <h3>Apex domain</h3>
               <p>
-                For `yourdomain.com`, add GitHub Pages `A` records and, if you
-                want, `AAAA` records for IPv6.
+                For <code>yourdomain.com</code>, add GitHub Pages
+                <code>A</code> records and, if you want, <code>AAAA</code>
+                records for IPv6.
               </p>
             </article>
 
@@ -408,20 +451,21 @@ git push -u origin main</code></pre>
         <section class="panel publish-panel" id="publish">
           <div class="section-heading">
             <p class="section-label">Publish checklist</p>
-            <h2>Before you share the repo.</h2>
+            <h2>Before you share the link.</h2>
           </div>
 
           <div class="check-grid">
-            <div class="check-item">Replace placeholder copy</div>
+            <div class="check-item">Replace placeholder headline and sections</div>
+            <div class="check-item">Update title, description, and social image</div>
             <div class="check-item">Add real links and contact info</div>
-            <div class="check-item">Rename `CNAME.example` when needed</div>
-            <div class="check-item">Set the domain inside the `CNAME` file</div>
-            <div class="check-item">Enable GitHub Pages</div>
-            <div class="check-item">Add the repo link to the LinkedIn assets</div>
+            <div class="check-item">Rename <code>CNAME.example</code> when needed</div>
+            <div class="check-item">Set your domain inside the <code>CNAME</code> file</div>
+            <div class="check-item">Enable GitHub Pages and HTTPS</div>
+            <div class="check-item">Add the repo URL to launch assets</div>
           </div>
           <div class="publish-actions">
             <a class="button primary" href="https://github.com/danlex/codex-free-website"
-              >Open GitHub Repo</a
+              >Open GitHub Starter</a
             >
             <a class="button secondary" href="QUICKSTART.md">Open Quickstart</a>
           </div>
@@ -472,10 +516,10 @@ git push -u origin main</code></pre>
 
         <section class="cta-strip">
           <p class="cta-kicker">Built for a clear starting point</p>
-          <h2>Clone it. Customize it. Publish it.</h2>
+          <h2>Clone it. Make it yours. Publish it on your domain.</h2>
           <p>
-            Use the explainer page, the quickstart, and the repo templates
-            together.
+            Use the starter as-is, customize it in Codex, and keep the stack
+            simple until the site genuinely needs more.
           </p>
         </section>
       </main>

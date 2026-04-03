@@ -88,6 +88,17 @@ pre {
   font-family: var(--mono);
 }
 
+p code,
+li code,
+.check-item code {
+  padding: 0.14rem 0.38rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ink);
+  font-size: 0.88em;
+}
+
 .background-grid {
   position: fixed;
   inset: 0;
@@ -289,6 +300,11 @@ h3 {
 .hero-copy {
   position: relative;
   z-index: 1;
+  min-width: 0;
+}
+
+.hero-copy h1 {
+  max-width: 8.6ch;
 }
 
 .hero-actions {
@@ -438,6 +454,8 @@ h3 {
   color: var(--muted);
   font-size: 0.84rem;
   font-family: var(--mono);
+  text-align: right;
+  overflow-wrap: anywhere;
 }
 
 .showcase-body {
@@ -445,10 +463,20 @@ h3 {
   grid-template-columns: minmax(0, 1fr) 248px;
   gap: 20px;
   padding-top: 18px;
+  align-items: start;
+}
+
+.showcase-body > * {
+  min-width: 0;
 }
 
 .showcase-primary {
   padding: 10px 6px 8px 2px;
+}
+
+.showcase-primary h2 {
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  max-width: 7.4ch;
 }
 
 .showcase-secondary {
@@ -722,8 +750,8 @@ h3 {
   padding: 18px;
   overflow: auto;
   border-radius: 18px;
-  background: #070b18;
-  color: #eef4ff;
+  background: rgba(17, 18, 24, 0.96);
+  color: #ede8e1;
   font-size: 0.95rem;
   line-height: 1.7;
   border: 1px solid rgba(255, 255, 255, 0.08);
