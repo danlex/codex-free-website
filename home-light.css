@@ -465,6 +465,31 @@
   gap: 20px;
 }
 
+.home-apple .tvl-logo-link {
+  display: inline-flex;
+  margin-bottom: 22px;
+  text-decoration: none;
+}
+
+.home-apple .tvl-logo-frame {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  min-height: 152px;
+  padding: 20px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #101010 0%, #1c1c1f 100%);
+  border: 1px solid rgba(255, 73, 49, 0.14);
+  box-shadow: 0 22px 60px rgba(16, 16, 16, 0.12);
+}
+
+.home-apple .tvl-logo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .home-apple .tvl-copy {
   padding: 34px;
   border-radius: 32px;
