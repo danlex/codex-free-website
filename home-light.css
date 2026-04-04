@@ -143,6 +143,15 @@
   font-size: 1.08rem;
 }
 
+.home-apple p code,
+.home-apple li code,
+.home-apple .check-item code,
+.home-apple .tvl-footnote code {
+  border-color: rgba(16, 16, 16, 0.08);
+  background: #f3f3f5;
+  color: #101010;
+}
+
 .home-apple .hero-meta {
   gap: 10px;
 }
