@@ -1,6 +1,10 @@
 # Codex Free Website
 
-Use this repo to build a simple website for free with Codex and GitHub Pages.
+This repo is now simple:
+
+- the root files are the starter
+- you edit them in Codex
+- you publish them on GitHub Pages
 
 Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
 
@@ -8,45 +12,33 @@ Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-fre
 
 ## Start Here
 
-Most people only need to do 3 things:
-
-1. Copy `templates/no-framework`
-2. Edit the files in Codex
-3. Push to GitHub Pages
-
-That is the main path.
-
-## Use These Files
-
-The actual starter is here:
-
-- `templates/no-framework/index.html`
-- `templates/no-framework/styles.css`
-- `templates/no-framework/script.js`
-- `templates/no-framework/CNAME.example`
-
-If you want to build your own website, start there.
-
-## What The Rest Of The Repo Is
+Edit these files in the repo root:
 
 - `index.html`
-  The published explainer homepage for this starter.
+- `styles.css`
+- `script.js`
+- `CNAME.example`
+
+That is the default path. No copying from a subfolder.
+
+## How To Use It
+
+1. Clone the repo
+2. Edit the root files in Codex
+3. Push to GitHub
+4. Enable GitHub Pages
+5. Add your domain when you are ready
+
+## What Else Is In The Repo
+
 - `how-it-works.html`
-  A second explainer page with the longer walkthrough.
+  Longer guide for using the starter and publishing it.
 - `QUICKSTART.md`
-  The detailed setup and publish instructions.
+  Short written setup instructions.
 - `prompts/first-codex-prompt.md`
-  A ready-made prompt for customizing the starter.
+  Starter prompt for customizing the site.
 - `content/`
   LinkedIn launch assets.
-
-## Why This Starter Is Simple
-
-- No install step
-- No build step
-- Works directly on GitHub Pages
-- Easy to edit in Codex
-- Easy to maintain later
 
 ## Recommended First Prompt
 
@@ -55,15 +47,14 @@ Turn this starter into a personal website for [name], a [role].
 
 Keep it compatible with GitHub Pages.
 Keep it as plain HTML, CSS, and JavaScript.
-Rewrite the copy, update the links, improve the design, and add 3 projects.
+Rewrite the copy, links, sections, and design so it feels specific to me.
 ```
 
 ## Documentation
 
 - Quickstart: [QUICKSTART.md](QUICKSTART.md)
-- Explainer page: [how-it-works.html](how-it-works.html)
-- Starter prompt: [prompts/first-codex-prompt.md](prompts/first-codex-prompt.md)
-- GitHub Pages custom domain docs: [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+- Guide: [how-it-works.html](how-it-works.html)
+- GitHub Pages domain docs: [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
 ## License
 

@@ -1,66 +1,55 @@
 # Quickstart
 
-This is the easiest way to use this repo.
+Use the root files as the starter.
 
-## The short version
-
-1. Copy `templates/no-framework`
-2. Edit the files in Codex
-3. Push to GitHub Pages
-
-## 1. Copy the starter
-
-Use these files:
-
-- `templates/no-framework/index.html`
-- `templates/no-framework/styles.css`
-- `templates/no-framework/script.js`
-- `templates/no-framework/CNAME.example`
-
-If you are on macOS or Linux:
-
-```bash
-git clone https://github.com/danlex/codex-free-website.git
-cd codex-free-website
-mkdir ../your-site
-cp -R templates/no-framework/. ../your-site/
-cd ../your-site
-```
-
-## 2. Edit the starter in Codex
-
-Open these files:
+## Edit These Files
 
 - `index.html`
 - `styles.css`
 - `script.js`
+- `CNAME.example`
 
-Then start with [prompts/first-codex-prompt.md](prompts/first-codex-prompt.md).
+## Basic Flow
 
-## 3. Push to GitHub
+1. Clone the repo
+2. Edit the root files in Codex
+3. Push to GitHub
+4. Enable GitHub Pages
+5. Add your custom domain
 
-From your new website folder:
+## Clone
 
 ```bash
-git init
-git add .
-git commit -m "Initial website"
-git branch -M main
-git remote add origin https://github.com/your-username/your-repo-name.git
-git push -u origin main
+git clone https://github.com/danlex/codex-free-website.git
+cd codex-free-website
 ```
 
-## 4. Enable GitHub Pages
+## Customize
 
-In GitHub:
+Start with:
+
+- `index.html` for content
+- `styles.css` for design
+- `script.js` for small interactions
+
+Prompt: [prompts/first-codex-prompt.md](prompts/first-codex-prompt.md)
+
+## Publish
+
+```bash
+git add .
+git commit -m "Customize website"
+git push
+```
+
+Then in GitHub:
 
 1. Open `Settings`
 2. Open `Pages`
 3. Choose `Deploy from a branch`
 4. Select `main` and `/ (root)`
-5. Save
 
-## 5. Add your custom domain
+## Custom Domain
 
 When you are ready:
 
@@ -68,15 +57,9 @@ When you are ready:
 2. Put your domain in the file
 3. Commit and push
 4. Add the domain in GitHub Pages settings
-5. Enable HTTPS once it is available
+5. Enable HTTPS once available
 
 Official docs:
 
 - [Configuring a custom domain for your GitHub Pages site](https://docs.github.com/articles/setting-up-a-custom-domain-with-github-pages)
 - [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
-
-## Common mistakes
-
-- Editing the explainer in the repo root instead of the starter in `templates/no-framework`
-- Forgetting to rename `CNAME.example`
-- Publishing before replacing the placeholder copy

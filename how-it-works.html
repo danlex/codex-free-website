@@ -6,7 +6,7 @@
     <title>How It Works | Free Website Starter for Codex + GitHub Pages</title>
     <meta
       name="description"
-      content="A step-by-step explainer for using the no-framework website starter in templates/no-framework, publishing on GitHub Pages, and connecting your own domain."
+      content="A step-by-step explainer for using the root HTML, CSS, and JavaScript files, publishing on GitHub Pages, and connecting your own domain."
     />
     <meta name="robots" content="noindex,follow" />
     <link rel="canonical" href="https://danlex.github.io/codex-free-website/" />
@@ -14,7 +14,7 @@
     <meta property="og:title" content="How It Works | Codex Free Website" />
     <meta
       property="og:description"
-      content="Use the no-framework website starter in templates/no-framework, customize it in Codex, publish it on GitHub Pages, and connect your own domain."
+      content="Use the root HTML, CSS, and JavaScript files, customize them in Codex, publish on GitHub Pages, and connect your own domain."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://danlex.github.io/codex-free-website/how-it-works.html" />
@@ -56,17 +56,17 @@
             <p class="eyebrow">Step-by-step explainer</p>
             <h1>Build your site in 3 steps.</h1>
             <p class="lead">
-              Start in <code>templates/no-framework</code>, edit the files in
-              Codex, then push to GitHub Pages. That is the whole path for most
-              people.
+              Start with the root <code>index.html</code>, <code>styles.css</code>,
+              and <code>script.js</code> files, then push to GitHub Pages.
+              That is the whole path for most people.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="https://github.com/danlex/codex-free-website/tree/main/templates/no-framework">Start with the template</a>
+              <a class="button primary" href="https://github.com/danlex/codex-free-website">Open the repo</a>
               <a class="button secondary" href="#stacks">See the 3 steps</a>
               <a class="button tertiary" href="QUICKSTART.md">Open quickstart</a>
             </div>
             <div class="hero-meta">
-              <div class="meta-pill">Start in templates/no-framework</div>
+              <div class="meta-pill">Edit the root files</div>
               <div class="meta-pill">Plain HTML</div>
               <div class="meta-pill">GitHub Pages</div>
               <div class="meta-pill">Custom Domain</div>
@@ -76,14 +76,14 @@
           <aside class="hero-card">
             <div class="signal-line"></div>
             <p class="mini-label">The short version</p>
-            <h2>Use <code>templates/no-framework</code>. Ignore the rest until you need it.</h2>
+            <h2>Edit the root files. Ignore the rest until you need it.</h2>
             <p class="mini-note">
-              The homepage explains the repo. The starter folder is the part
-              you actually use for your own website.
+              The homepage is the starter. The guide and docs are there only to
+              help you publish it.
             </p>
             <ul class="mini-list">
-              <li><strong>1</strong><span>Copy the starter files</span></li>
-              <li><strong>2</strong><span>Edit them in Codex</span></li>
+              <li><strong>1</strong><span>Edit the root files</span></li>
+              <li><strong>2</strong><span>Customize them in Codex</span></li>
               <li><strong>3</strong><span>Push and enable Pages</span></li>
             </ul>
             <div class="hero-stats">
@@ -114,10 +114,11 @@
           <div class="stack-grid">
             <article class="stack-card featured">
               <p class="stack-index">01</p>
-              <h3>Copy the starter folder</h3>
+              <h3>Edit the root files</h3>
               <p>
-                Use <code>templates/no-framework</code> as the starting point
-                for your own website. That is the part you actually need.
+                The website starter now lives in the repo root:
+                <code>index.html</code>, <code>styles.css</code>, and
+                <code>script.js</code>.
               </p>
               <span class="chip">Start here</span>
             </article>
@@ -145,8 +146,8 @@
           </div>
           <div class="decision-banner">
             <span>If you only remember one thing</span>
-            Build from <code>templates/no-framework</code>. Everything else in
-            this repo is there to explain, support, or share the starter.
+            Build from the root files. Everything else in this repo is there to
+            explain, support, or share the starter.
           </div>
         </section>
 
@@ -162,9 +163,8 @@
               <div class="timeline-copy">
                 <h3>Clone the repo to inspect the system</h3>
                 <p>
-                  Start by reviewing the explainer, the starter folder, and the
-                  quickstart so you know exactly which files belong to your own
-                  site.
+                  Clone the repo, then open the root files. That is the starter
+                  you will customize and publish.
                 </p>
                 <pre><code>git clone https://github.com/danlex/codex-free-website.git
 cd codex-free-website</code></pre>
@@ -174,14 +174,12 @@ cd codex-free-website</code></pre>
             <article class="timeline-step">
               <div class="timeline-number">2</div>
               <div class="timeline-copy">
-                <h3>Use the starter folder</h3>
+                <h3>Edit the starter files in the root</h3>
                 <p>
-                  Copy the files from <code>templates/no-framework</code> into
-                  your own repo or working directory. That is the starting
-                  point for your website.
+                  Open the root files directly. You do not need to copy
+                  anything from a subfolder anymore.
                 </p>
-                <pre><code>templates/no-framework/
-  index.html
+                <pre><code>index.html
 styles.css
 script.js</code></pre>
               </div>
@@ -208,8 +206,8 @@ script.js</code></pre>
               <div class="timeline-copy">
                 <h3>Push to GitHub</h3>
                 <p>
-                  Create a new repo with the starter files, commit them, and
-                  push <code>main</code>.
+                  Customize the root starter files, commit them, and push
+                  <code>main</code>.
                 </p>
                 <pre><code>git init
 git add .
@@ -293,7 +291,7 @@ git push -u origin main</code></pre>
 
           <div class="check-grid">
             <div class="check-item">Replace placeholder copy and sections</div>
-            <div class="check-item">Use <code>templates/no-framework</code> as the starter source</div>
+            <div class="check-item">Edit the root <code>index.html</code>, <code>styles.css</code>, and <code>script.js</code> files</div>
             <div class="check-item">Add real links and contact info</div>
             <div class="check-item">Rename <code>CNAME.example</code> when needed</div>
             <div class="check-item">Set the domain inside the <code>CNAME</code> file</div>
@@ -357,7 +355,7 @@ git push -u origin main</code></pre>
           <p class="cta-kicker">Built for a clear starting point</p>
           <h2>Clone it. Customize it. Publish it.</h2>
           <p>
-            Use the explainer, the quickstart, and the starter folder together.
+            Use the starter, the guide, and the quickstart together.
           </p>
         </section>
       </main>
