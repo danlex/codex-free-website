@@ -44,6 +44,12 @@ p code {
   background: #f3f3f5;
 }
 
+.file-row span code,
+.card p code,
+.starter-note p code {
+  overflow-wrap: anywhere;
+}
+
 .page-shell {
   width: min(calc(100% - 32px), var(--max-width));
   margin: 0 auto 48px;
@@ -221,6 +227,10 @@ h3 {
   font-size: 0.98rem;
 }
 
+.card-label-files {
+  margin-top: 18px;
+}
+
 .starter-note {
   margin-top: 18px;
   padding: 18px;
@@ -250,6 +260,10 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.onboarding-cards .card p {
+  margin-top: 10px;
 }
 
 .card,
