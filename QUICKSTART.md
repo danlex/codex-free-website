@@ -8,11 +8,24 @@ Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-
 Open [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website) and click `Use this template`.
 If you do not see it, fork the repo instead.
 
-## 2. Clone your repo
+## 2. Clone the copy you created
+
+After you use the template, you will have your own repo on GitHub.
+
+Example:
+- template repo: `github.com/danlex/codex-free-website`
+- your new repo: `github.com/alice/my-landing-page`
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
+
+Real example:
+
+```bash
+git clone https://github.com/alice/my-landing-page.git
+cd my-landing-page
 ```
 
 ## 3. Edit and publish with AI in Codex
