@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How It Works | Edit and Publish with AI in Codex</title>
+    <title>How It Works | Edit, Preview, and Publish with AI in Codex</title>
     <meta
       name="description"
-      content="A step-by-step explainer for making your own repo, cloning it locally, editing it in Codex, publishing on GitHub Pages, and optionally adding a custom domain."
+      content="A step-by-step explainer for making your own repo, cloning it locally, editing it in Codex, previewing it locally, publishing on GitHub Pages, and adding a custom domain."
     />
     <meta name="robots" content="noindex,follow" />
     <link rel="canonical" href="https://danlex.github.io/codex-free-website/" />
     <meta name="theme-color" content="#f5f5f7" />
-    <meta property="og:title" content="How It Works | Edit and Publish with AI in Codex" />
+    <meta property="og:title" content="How It Works | Edit, Preview, and Publish with AI in Codex" />
     <meta
       property="og:description"
-      content="Make your own repo, clone it locally, edit it in Codex, publish on GitHub Pages, and optionally add a custom domain."
+      content="Make your own repo, clone it locally, edit it in Codex, preview it locally, publish on GitHub Pages, and add a custom domain."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://danlex.github.io/codex-free-website/how-it-works.html" />
@@ -53,10 +53,10 @@
         <div class="hero-grid" id="top">
           <div class="hero-copy">
             <p class="eyebrow">Beginner guide</p>
-            <h1>Launch a landing page in 5 steps.</h1>
+            <h1>Launch a landing page in 6 steps.</h1>
             <p class="lead">
               First make your own copy of this repo on GitHub. Then clone your
-              repo, open it in Codex, edit 3 files, and publish
+              repo, open it in Codex, preview it locally, and publish
               with GitHub Pages.
             </p>
             <p class="lead">
@@ -68,13 +68,13 @@
             </p>
             <div class="hero-actions">
               <a class="button primary" href="https://github.com/danlex/codex-free-website">Open the repo</a>
-              <a class="button secondary" href="#steps">See the 5 steps</a>
+              <a class="button secondary" href="#steps">See the 6 steps</a>
               <a class="button tertiary" href="QUICKSTART.md">Open quickstart</a>
             </div>
             <div class="hero-meta">
               <div class="meta-pill">Make your own repo</div>
               <div class="meta-pill">Codex</div>
-              <div class="meta-pill">3 root files</div>
+              <div class="meta-pill">Local preview</div>
               <div class="meta-pill">GitHub Pages</div>
             </div>
           </div>
@@ -91,11 +91,11 @@
               <li><strong>1</strong><span>Use this template or fork</span></li>
               <li><strong>2</strong><span>Clone your repo</span></li>
               <li><strong>3</strong><span>Edit and publish with AI in Codex</span></li>
-              <li><strong>4</strong><span>Push and enable Pages</span></li>
+              <li><strong>4</strong><span>Preview it locally</span></li>
             </ul>
             <div class="hero-stats">
               <div>
-                <strong>5</strong>
+                <strong>6</strong>
                 <span>main steps</span>
               </div>
               <div>
@@ -142,12 +142,13 @@
 
             <article class="stack-card">
               <p class="stack-index">03</p>
-              <h3>Optional custom domain</h3>
+              <h3>Custom domain</h3>
               <p>
                 Hosting can stay free on GitHub Pages. Your custom domain is
-                optional and is usually paid separately.
+                part of the default path, but the domain itself is usually paid
+                separately.
               </p>
-              <span class="chip chip-dark">Optional</span>
+              <span class="chip chip-dark">Required</span>
             </article>
           </div>
           <div class="decision-banner">
@@ -160,7 +161,7 @@
         <section class="panel accent" id="steps">
           <div class="section-heading">
             <p class="section-label">Step by step</p>
-            <h2>Do these 5 things in order.</h2>
+            <h2>Do these 6 things in order.</h2>
           </div>
 
           <div class="timeline">
@@ -239,6 +240,23 @@ script.js</code></pre>
             <article class="timeline-step">
               <div class="timeline-number">4</div>
               <div class="timeline-copy">
+                <h3>Preview the site locally</h3>
+                <p>
+                  Start the local preview server, then open the site in your
+                  browser before you push anything.
+                </p>
+                <pre><code>sh scripts/preview.sh</code></pre>
+                <p class="step-result"><strong>Result:</strong> you can review the site at <code>http://localhost:8000</code>.</p>
+                <div class="screenshot-placeholder">
+                  <strong>Screenshot 4</strong>
+                  <span>Your browser open at <code>http://localhost:8000</code> with the edited page visible.</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-step">
+              <div class="timeline-number">5</div>
+              <div class="timeline-copy">
                 <h3>Push your changes to GitHub</h3>
                 <p>
                   After you review the edits, commit them and push them to your
@@ -249,14 +267,14 @@ git commit -m "Customize landing page"
 git push</code></pre>
                 <p class="step-result"><strong>Result:</strong> your updated files are now on GitHub.</p>
                 <div class="screenshot-placeholder">
-                  <strong>Screenshot 4</strong>
+                  <strong>Screenshot 5</strong>
                   <span>GitHub showing the updated files or latest commit on <code>main</code>.</span>
                 </div>
               </div>
             </article>
 
             <article class="timeline-step">
-              <div class="timeline-number">5</div>
+              <div class="timeline-number">6</div>
               <div class="timeline-copy">
                 <h3>Enable GitHub Pages</h3>
                 <p>
@@ -269,7 +287,7 @@ Branch: main
 / (root)</code></pre>
                 <p class="step-result"><strong>Result:</strong> your landing page gets a live GitHub Pages URL.</p>
                 <div class="screenshot-placeholder">
-                  <strong>Screenshot 5</strong>
+                  <strong>Screenshot 6</strong>
                   <span>GitHub Pages settings showing <code>main</code> and <code>/ (root)</code>.</span>
                 </div>
               </div>
@@ -279,7 +297,7 @@ Branch: main
 
         <section class="panel" id="domain">
           <div class="section-heading">
-            <p class="section-label">Optional domain</p>
+            <p class="section-label">Custom domain</p>
             <h2>Add your domain after the site is live.</h2>
           </div>
 
@@ -320,7 +338,7 @@ Branch: main
               paid purchase from your domain provider.
             </p>
             <div class="screenshot-placeholder">
-              <strong>Screenshot 6</strong>
+              <strong>Screenshot 7</strong>
               <span>GitHub Pages custom domain field and your DNS provider records.</span>
             </div>
           </div>

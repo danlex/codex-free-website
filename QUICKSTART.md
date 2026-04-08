@@ -42,7 +42,15 @@ Style: modern, minimal, premium, white background with warm orange accents.
 Format: wide website hero image.
 ```
 
-## 4. Push
+## 4. Preview locally
+
+```bash
+sh scripts/preview.sh
+```
+
+Open [localhost:8000](http://localhost:8000) and check the page before you publish.
+
+## 5. Push
 
 ```bash
 git add .
@@ -50,7 +58,7 @@ git commit -m "Customize website"
 git push
 ```
 
-## 5. Enable Pages
+## 6. Enable Pages
 
 In GitHub:
 
@@ -59,12 +67,14 @@ In GitHub:
 3. Choose `Deploy from a branch`
 4. Select `main` and `/ (root)`
 
-## 6. Add your domain
+## 7. Add your domain
 
 1. In GitHub, open `Settings` > `Pages` and enter your custom domain
 2. Optionally rename `CNAME.example` to `CNAME` so the domain stays in the repo
 3. Update your DNS records
 4. Wait for GitHub to enable HTTPS
+
+GitHub Pages hosting can stay free. The domain itself is usually paid separately.
 
 Docs:
 

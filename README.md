@@ -42,10 +42,20 @@ Style: modern, minimal, premium, white background with warm orange accents.
 Format: wide website hero image.
 ```
 
-## 4. Push and publish
+## 4. Preview locally
+
+```bash
+sh scripts/preview.sh
+```
+
+Then open [localhost:8000](http://localhost:8000).
+
+## 5. Push and publish
 
 1. Push to GitHub
 2. Enable GitHub Pages
-3. Add your domain when ready
+3. Add your custom domain
+
+GitHub Pages hosting can stay free. The domain itself is usually paid separately.
 
 Guide: [QUICKSTART.md](QUICKSTART.md)
