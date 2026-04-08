@@ -15,7 +15,7 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 ```
 
-## 3. Open it in Codex or Claude Code
+## 3. Edit and publish with AI in Codex
 
 Edit the root files:
 
@@ -32,7 +32,7 @@ Update the hero, about section, projects, contact links, and SEO copy.
 Keep it plain HTML, CSS, and JavaScript.
 ```
 
-If you are using Codex, you can also ask it to generate images directly.
+With Codex, you can also generate images directly.
 
 Example:
 
