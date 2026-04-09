@@ -48,11 +48,9 @@ pre,
 .section-label,
 .panel-label,
 .pill,
-.workflow-step,
 .recipe-kicker,
 .brand,
-.site-nav a,
-.copy-button {
+.site-nav a {
   font-family: var(--mono);
 }
 
@@ -79,6 +77,38 @@ summary code {
     linear-gradient(90deg, rgba(16, 16, 16, 0.028) 1px, transparent 1px);
   background-size: 72px 72px;
   opacity: 0.5;
+}
+
+.repo-banner {
+  display: none;
+  background: #101010;
+  border-bottom: 1px solid rgba(255, 73, 49, 0.14);
+}
+
+body.is-repo-demo .repo-banner {
+  display: block;
+}
+
+.repo-banner-inner {
+  width: min(calc(100% - 32px), var(--max-width));
+  margin: 0 auto;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.repo-banner-copy {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+}
+
+.repo-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .site-shell {
@@ -167,7 +197,7 @@ summary code {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.82fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.82fr);
   gap: 28px;
   margin-top: 22px;
   padding: 40px;
@@ -193,12 +223,12 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(3.4rem, 8vw, 6.6rem);
-  max-width: 7.2ch;
+  font-size: clamp(3.4rem, 8vw, 6.2rem);
+  max-width: 9ch;
 }
 
 h2 {
-  font-size: clamp(2.3rem, 5vw, 4.2rem);
+  font-size: clamp(2.3rem, 5vw, 4rem);
   max-width: 12ch;
 }
 
@@ -207,13 +237,15 @@ h3 {
 }
 
 .lead,
-.workflow-card p,
-.included-card p,
+.card p,
+.feature-card p,
+.proof-card p,
 .faq-item p,
 .final-cta p,
 .hero-note,
-.text-link,
-.path-list li {
+.path-list li,
+.repo-banner-copy,
+.quickstart-note {
   color: var(--muted);
   line-height: 1.7;
   font-size: 1.02rem;
@@ -249,9 +281,7 @@ h3 {
 }
 
 .button:hover,
-.button:focus-visible,
-.copy-button:hover,
-.copy-button:focus-visible {
+.button:focus-visible {
   transform: translateY(-2px);
 }
 
@@ -269,7 +299,7 @@ h3 {
 .button-secondary {
   color: var(--ink);
   border-color: var(--line-strong);
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
 }
 
 .button-small {
@@ -280,18 +310,7 @@ h3 {
 
 .hero-note {
   margin: 18px 0 0;
-  max-width: 56ch;
-}
-
-.hero-note a {
-  color: var(--ink);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.hero-note a:hover,
-.hero-note a:focus-visible {
-  color: var(--accent);
+  max-width: 58ch;
 }
 
 .pill-row {
@@ -388,15 +407,24 @@ h3 {
   margin-bottom: 24px;
 }
 
-.workflow-grid,
+.split-grid,
+.feature-grid,
+.proof-grid,
 .command-grid,
-.recipe-grid,
-.included-grid {
+.faq-list {
   display: grid;
   gap: 18px;
 }
 
-.workflow-grid {
+.split-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.proof-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -404,97 +432,19 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.workflow-card,
+.card,
+.feature-card,
+.proof-card,
 .command-card,
-.recipe-card,
-.included-card {
+.faq-item {
   padding: 22px;
   border-radius: 24px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.8);
 }
 
-.workflow-step {
-  display: inline-flex;
-  width: 34px;
-  height: 34px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-  border-radius: 999px;
-  background: #101010;
-  color: #ffffff;
-  font-size: 0.84rem;
-}
-
-.recipe-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.recipe-card {
-  display: grid;
-  gap: 14px;
-}
-
-.recipe-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.copy-button {
-  border: 1px solid var(--line);
-  background: #ffffff;
-  color: var(--ink);
-  padding: 10px 12px;
-  border-radius: 999px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.recipe-card pre {
-  margin: 0;
-  padding: 18px;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  background: #101010;
-  color: #f4f4f7;
-  font-size: 0.9rem;
-  line-height: 1.65;
-  white-space: pre-wrap;
-}
-
-.text-link {
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.text-link:hover,
-.text-link:focus-visible {
-  color: var(--accent);
-}
-
-.included-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.quickstart-actions {
-  display: flex;
-  justify-content: center;
-  margin-top: 22px;
-}
-
-.quickstart-note {
-  margin: 20px 0 0;
-  color: var(--muted);
-  line-height: 1.7;
-  text-align: center;
-}
-
-.command-card {
-  display: grid;
-  gap: 14px;
+.card-large {
+  min-height: 100%;
 }
 
 .command-card pre {
@@ -507,6 +457,11 @@ h3 {
   font-size: 0.92rem;
   line-height: 1.65;
   white-space: pre-wrap;
+}
+
+.command-card {
+  display: grid;
+  gap: 14px;
 }
 
 .resource-links {
@@ -526,16 +481,15 @@ h3 {
   color: var(--accent);
 }
 
-.faq-list {
-  display: grid;
-  gap: 16px;
+.quickstart-note {
+  margin: 20px 0 0;
+  text-align: center;
 }
 
-.faq-item {
-  padding: 18px 20px;
-  border-radius: 22px;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.8);
+.quickstart-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
 }
 
 .faq-item summary {
@@ -587,8 +541,17 @@ h3 {
 }
 
 @media (max-width: 1180px) {
+  .repo-banner-inner,
   .site-header {
     grid-template-columns: 1fr;
+  }
+
+  .repo-banner-inner {
+    display: grid;
+    justify-items: start;
+  }
+
+  .site-header {
     justify-items: start;
   }
 
@@ -597,17 +560,11 @@ h3 {
   }
 
   .hero,
-  .recipe-grid,
+  .split-grid,
+  .feature-grid,
+  .proof-grid,
   .command-grid {
     grid-template-columns: 1fr;
-  }
-
-  .workflow-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .included-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -623,12 +580,6 @@ h3 {
     border-radius: 24px;
   }
 
-  .workflow-grid,
-  .command-grid,
-  .included-grid {
-    grid-template-columns: 1fr;
-  }
-
   h1,
   h2 {
     max-width: none;
@@ -636,6 +587,10 @@ h3 {
 }
 
 @media (max-width: 620px) {
+  .repo-banner-inner {
+    width: min(calc(100% - 20px), var(--max-width));
+  }
+
   .site-header {
     padding: 14px;
   }
@@ -660,22 +615,14 @@ h3 {
     padding-top: 28px;
   }
 
-  .hero-actions {
+  .hero-actions,
+  .repo-banner-actions {
     flex-direction: column;
     align-items: stretch;
   }
 
   .button,
   .button-small {
-    width: 100%;
-  }
-
-  .recipe-top {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .copy-button {
     width: 100%;
   }
 }

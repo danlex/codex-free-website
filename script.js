@@ -1,3 +1,11 @@
+const isRepoDemo =
+  window.location.hostname === "danlex.github.io" &&
+  window.location.pathname.startsWith("/free-website");
+
+if (isRepoDemo) {
+  document.body.classList.add("is-repo-demo");
+}
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const targetId = link.getAttribute("href");
@@ -9,30 +17,6 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
     event.preventDefault();
     target.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-document.querySelectorAll("[data-copy-target]").forEach((button) => {
-  button.addEventListener("click", async () => {
-    const targetId = button.getAttribute("data-copy-target");
-    const target = targetId ? document.getElementById(targetId) : null;
-
-    if (!target) {
-      return;
-    }
-
-    const originalText = button.textContent;
-
-    try {
-      await navigator.clipboard.writeText(target.textContent.trim());
-      button.textContent = "Copied";
-    } catch (error) {
-      button.textContent = "Copy failed";
-    }
-
-    window.setTimeout(() => {
-      button.textContent = originalText;
-    }, 1400);
   });
 });
 
