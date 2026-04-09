@@ -1,8 +1,8 @@
 {
-  "name": "TVL Tech Free Website",
-  "short_name": "TVL Free",
-  "description": "A TVL Tech template-first launch kit for building a free website with AI using Codex and GitHub Pages.",
-  "start_url": "/",
+  "name": "Codex Free Website",
+  "short_name": "Codex Free",
+  "description": "A template-first Codex and GitHub Pages launch kit for building a free website with AI.",
+  "start_url": "/codex-free-website/",
   "display": "standalone",
   "background_color": "#f5f5f7",
   "theme_color": "#101010",

@@ -3,7 +3,7 @@
 Build a free website with AI using Codex and GitHub Pages.
 
 - Use This Template: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
-- Live site: [free-website.tvl.tech](https://free-website.tvl.tech/)
+- Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
 - Screenshot guide: [QUICKSTART.md](QUICKSTART.md)
 
 ## The one path

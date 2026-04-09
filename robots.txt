@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://free-website.tvl.tech/sitemap.xml
+Sitemap: https://danlex.github.io/codex-free-website/sitemap.xml

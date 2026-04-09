@@ -3,7 +3,7 @@
 This guide is the screenshot-first path from template to live site.
 
 - Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
-- Live site: [free-website.tvl.tech](https://free-website.tvl.tech/)
+- Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
 
 ## 1. Use This Template on GitHub
 
