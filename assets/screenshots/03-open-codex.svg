@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#F5F5F7"/>
+  <rect x="72" y="72" width="1456" height="856" rx="40" fill="#FFFFFF" stroke="#E7E7EA" stroke-width="4"/>
+  <text x="128" y="160" fill="#FF4931" font-family="JetBrains Mono, monospace" font-size="26" letter-spacing="3">SCREENSHOT 03</text>
+  <text x="128" y="272" fill="#101010" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800">Open Codex in the repo</text>
+  <rect x="128" y="346" width="620" height="482" rx="32" fill="#101010"/>
+  <rect x="780" y="346" width="692" height="482" rx="32" fill="#F4F4F6" stroke="#E7E7EA" stroke-width="4"/>
+  <text x="176" y="420" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="30">index.html</text>
+  <text x="176" y="472" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="30">styles.css</text>
+  <text x="176" y="524" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="30">script.js</text>
+  <text x="828" y="430" fill="#101010" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Codex prompt area</text>
+  <text x="828" y="492" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="30">Replace this with a real screenshot of Codex opened in the cloned repository.</text>
+</svg>

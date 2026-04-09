@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#F5F5F7"/>
+  <rect x="72" y="72" width="1456" height="856" rx="40" fill="#FFFFFF" stroke="#E7E7EA" stroke-width="4"/>
+  <rect x="72" y="72" width="1456" height="120" rx="40" fill="#101010"/>
+  <text x="128" y="148" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Screenshot 01</text>
+  <text x="128" y="286" fill="#FF4931" font-family="JetBrains Mono, monospace" font-size="26" letter-spacing="3">QUICKSTART PLACEHOLDER</text>
+  <text x="128" y="386" fill="#101010" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="800">Use This Template on GitHub</text>
+  <text x="128" y="468" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="34">Replace this SVG with a real screenshot of the template button or fork flow.</text>
+  <rect x="128" y="560" width="420" height="92" rx="24" fill="#FF4931"/>
+  <text x="196" y="618" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Use This Template</text>
+</svg>

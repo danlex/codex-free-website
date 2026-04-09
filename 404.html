@@ -6,10 +6,10 @@
     <title>Page Not Found | Codex Free Website</title>
     <meta
       name="description"
-      content="The page you requested does not exist. Head back to the Codex Free Website homepage."
+      content="The page you requested does not exist. Go back to the Codex Free Website homepage."
     />
     <meta name="robots" content="noindex,follow" />
-    <meta name="theme-color" content="#f5f5f7" />
+    <meta name="theme-color" content="#101010" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -20,29 +20,27 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="how-it-works.css" />
-    <link rel="stylesheet" href="home-light.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="home-apple docs-page">
-    <div class="background-grid"></div>
-    <div class="background-orb orb-one"></div>
-    <div class="background-orb orb-two"></div>
-    <div class="background-orb orb-three"></div>
-    <main class="page-shell">
-      <section class="hero-panel not-found-panel">
-        <p class="eyebrow">404</p>
-        <h1>That page is not here.</h1>
-        <p class="lead">
-          Head back to the homepage to see the starter, the publish flow, and
-          the GitHub Pages checklist.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="/codex-free-website/">Go home</a>
-          <a class="button secondary" href="https://github.com/danlex/codex-free-website"
-            >View repo</a
-          >
-        </div>
-      </section>
-    </main>
+  <body>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="site-shell">
+      <main>
+        <section class="final-cta" style="margin-top: 24px;">
+          <p class="section-label">404</p>
+          <h2>That page is not here.</h2>
+          <p>
+            Go back to the homepage to use the template, preview the flow, and
+            follow the GitHub Pages setup path.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/codex-free-website/">Go home</a>
+            <a class="button button-secondary" href="https://github.com/danlex/codex-free-website"
+              >View repo</a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

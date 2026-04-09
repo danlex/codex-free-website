@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#F5F5F7"/>
+  <rect x="72" y="72" width="1456" height="856" rx="40" fill="#FFFFFF" stroke="#E7E7EA" stroke-width="4"/>
+  <text x="128" y="160" fill="#FF4931" font-family="JetBrains Mono, monospace" font-size="26" letter-spacing="3">SCREENSHOT 07</text>
+  <text x="128" y="272" fill="#101010" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800">Enable GitHub Pages</text>
+  <rect x="128" y="352" width="1344" height="420" rx="32" fill="#F4F4F6" stroke="#E7E7EA" stroke-width="4"/>
+  <text x="176" y="436" fill="#101010" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Settings &gt; Pages</text>
+  <text x="176" y="500" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="30">Deploy from a branch</text>
+  <text x="176" y="552" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="30">Branch: main</text>
+  <text x="176" y="604" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="30">Folder: / (root)</text>
+  <text x="176" y="700" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="32">Replace this SVG with a real Pages settings screenshot.</text>
+</svg>

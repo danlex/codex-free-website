@@ -1,63 +1,64 @@
 # Quickstart
 
-Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
-Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
+This guide is the screenshot-first path from template to live site.
 
-## 1. Make your own copy on GitHub
+- Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
+- Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
 
-Open [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website) and click `Use this template`.
-If you do not see it, fork the repo instead.
+## 1. Use This Template on GitHub
 
-## 2. Clone your fork or copy of this repo
+Open the repo and click `Use this template`.
+If template mode is not enabled, fork the repo instead.
 
-After you fork or use the template, you will have your own copy of
-`codex-free-website` on GitHub.
+![Screenshot 1](assets/screenshots/01-use-this-template.svg)
 
-If you keep the same repo name, the clone URL will usually look like this:
+## 2. Clone the repository
+
+If you keep the same repo name, the command will usually look like this:
 
 ```bash
 git clone https://github.com/your-username/codex-free-website.git
 cd codex-free-website
 ```
 
-If you rename the repo, replace `codex-free-website` with your repo name.
+If you renamed the repo, replace `codex-free-website` with your repo name.
 
-## 3. Edit and publish with AI in Codex
+![Screenshot 2](assets/screenshots/02-clone-repository.svg)
 
-Edit the root files:
+## 3. Open Codex in the repo
+
+Open the cloned repository in Codex.
+The main files you will edit are:
 
 - `index.html`
 - `styles.css`
 - `script.js`
-- `CNAME.example`
 
-Paste a prompt like this:
+![Screenshot 3](assets/screenshots/03-open-codex.svg)
 
-```text
-Turn this starter into a personal website for [name], a [role].
-Update the hero, about section, projects, contact links, and SEO copy.
-Keep it plain HTML, CSS, and JavaScript.
-```
+## 4. Paste one of the prompt recipes
 
-With Codex, you can also generate images directly.
+Choose one of these:
 
-Example:
+- [personal-website.md](prompts/personal-website.md)
+- [portfolio.md](prompts/portfolio.md)
+- [landing-page.md](prompts/landing-page.md)
 
-```text
-Generate a clean hero image for a landing page about [business or product].
-Style: modern, minimal, premium, white background with warm orange accents.
-Format: wide website hero image.
-```
+Codex can also generate images directly if you need a hero image or supporting visuals.
 
-## 4. Preview locally
+![Screenshot 4](assets/screenshots/04-paste-prompt.svg)
+
+## 5. Run local preview
 
 ```bash
 sh scripts/preview.sh
 ```
 
-Open [localhost:8000](http://localhost:8000) and check the page before you publish.
+Open [http://localhost:8000](http://localhost:8000) and review the page before you publish.
 
-## 5. Push
+![Screenshot 5](assets/screenshots/05-run-preview.svg)
+
+## 6. Commit and push changes
 
 ```bash
 git add .
@@ -65,7 +66,9 @@ git commit -m "Customize website"
 git push
 ```
 
-## 6. Enable Pages
+![Screenshot 6](assets/screenshots/06-push-changes.svg)
+
+## 7. Enable GitHub Pages
 
 In GitHub:
 
@@ -74,15 +77,34 @@ In GitHub:
 3. Choose `Deploy from a branch`
 4. Select `main` and `/ (root)`
 
-## 7. Add your domain
+![Screenshot 7](assets/screenshots/07-enable-pages.svg)
+
+## 8. Add a custom domain
 
 1. In GitHub, open `Settings` > `Pages` and enter your custom domain
 2. Optionally rename `CNAME.example` to `CNAME` so the domain stays in the repo
 3. Update your DNS records
-4. Wait for GitHub to enable HTTPS
 
-GitHub Pages hosting can stay free. The domain itself is usually paid separately.
+![Screenshot 8](assets/screenshots/08-add-custom-domain.svg)
 
-Docs:
+## 9. Verify HTTPS is active
 
-- [GitHub Pages custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+Wait for GitHub Pages to show HTTPS as enabled for the custom domain.
+
+![Screenshot 9](assets/screenshots/09-verify-https.svg)
+
+GitHub Pages hosting can stay free. The custom domain itself is usually a separate purchase from your domain provider.
+
+## Screenshot placeholders
+
+The images above are placeholders until real screenshots are added:
+
+- `assets/screenshots/01-use-this-template.svg`
+- `assets/screenshots/02-clone-repository.svg`
+- `assets/screenshots/03-open-codex.svg`
+- `assets/screenshots/04-paste-prompt.svg`
+- `assets/screenshots/05-run-preview.svg`
+- `assets/screenshots/06-push-changes.svg`
+- `assets/screenshots/07-enable-pages.svg`
+- `assets/screenshots/08-add-custom-domain.svg`
+- `assets/screenshots/09-verify-https.svg`

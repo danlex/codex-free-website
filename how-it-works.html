@@ -3,374 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How It Works | Edit, Preview, and Publish with AI in Codex</title>
+    <title>Quickstart Moved | Codex Free Website</title>
     <meta
       name="description"
-      content="A step-by-step explainer for making your own repo, cloning it locally, editing it in Codex, previewing it locally, publishing on GitHub Pages, and adding a custom domain."
+      content="The quickstart flow now lives on the homepage and in QUICKSTART.md."
     />
-    <meta name="robots" content="noindex,follow" />
-    <link rel="canonical" href="https://danlex.github.io/codex-free-website/" />
-    <meta name="theme-color" content="#f5f5f7" />
-    <meta property="og:title" content="How It Works | Edit, Preview, and Publish with AI in Codex" />
-    <meta
-      property="og:description"
-      content="Make your own repo, clone it locally, edit it in Codex, preview it locally, publish on GitHub Pages, and add a custom domain."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://danlex.github.io/codex-free-website/how-it-works.html" />
+    <meta http-equiv="refresh" content="0; url=./#quickstart" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="how-it-works.css" />
-    <link rel="stylesheet" href="home-light.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, sans-serif;
+        background: #f5f5f7;
+        color: #101010;
+      }
+
+      main {
+        width: min(calc(100% - 32px), 720px);
+        margin: 80px auto;
+        padding: 32px;
+        border: 1px solid rgba(16, 16, 16, 0.08);
+        border-radius: 28px;
+        background: #fff;
+        box-shadow: 0 24px 64px rgba(16, 16, 16, 0.08);
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: -0.05em;
+      }
+
+      p {
+        line-height: 1.7;
+        color: #5e6168;
+      }
+
+      a {
+        color: #ff4931;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
   </head>
-  <body class="home-apple docs-page">
-    <div class="background-grid"></div>
-    <div class="background-orb orb-one"></div>
-    <div class="background-orb orb-two"></div>
-    <div class="background-orb orb-three"></div>
-
-    <div class="page-shell">
-      <header class="hero-panel">
-        <nav class="topbar">
-          <a class="brand" href="#top">CODEX FREE WEBSITE</a>
-          <div class="nav-links">
-            <a href="#start">Start</a>
-            <a href="#steps">Steps</a>
-            <a href="#domain">Domain</a>
-            <a href="https://github.com/danlex/codex-free-website">GitHub</a>
-          </div>
-        </nav>
-
-        <div class="hero-grid" id="top">
-          <div class="hero-copy">
-            <p class="eyebrow">Beginner guide</p>
-            <h1>Launch a landing page in 6 steps.</h1>
-            <p class="lead">
-              First make your own copy of this repo on GitHub. Then clone your
-              repo, open it in Codex, preview it locally, and publish
-              with GitHub Pages.
-            </p>
-            <p class="lead">
-              Use the GitHub repo URL for cloning:
-              <code>github.com/danlex/codex-free-website</code>.
-              The GitHub Pages URL
-              <code>danlex.github.io/codex-free-website</code> is the live site,
-              not the repo to clone.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="https://github.com/danlex/codex-free-website">Open the repo</a>
-              <a class="button secondary" href="#steps">See the 6 steps</a>
-              <a class="button tertiary" href="QUICKSTART.md">Open quickstart</a>
-            </div>
-            <div class="hero-meta">
-              <div class="meta-pill">Make your own repo</div>
-              <div class="meta-pill">Codex</div>
-              <div class="meta-pill">Local preview</div>
-              <div class="meta-pill">GitHub Pages</div>
-            </div>
-          </div>
-
-          <aside class="hero-card">
-            <div class="signal-line"></div>
-            <p class="mini-label">Start here</p>
-            <h2>Make your own repo first.</h2>
-            <p class="mini-note">
-              Do not clone this public repo and try to push back to it. First
-              create your own copy on GitHub, then clone your repo locally.
-            </p>
-            <ul class="mini-list">
-              <li><strong>1</strong><span>Use this template or fork</span></li>
-              <li><strong>2</strong><span>Clone your fork or copy</span></li>
-              <li><strong>3</strong><span>Edit and publish with AI in Codex</span></li>
-              <li><strong>4</strong><span>Preview it locally</span></li>
-            </ul>
-            <div class="hero-stats">
-              <div>
-                <strong>6</strong>
-                <span>main steps</span>
-              </div>
-              <div>
-                <strong>3</strong>
-                <span>files to edit</span>
-              </div>
-              <div>
-                <strong>$0</strong>
-                <span>hosting cost</span>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </header>
-
-      <main>
-        <section class="panel" id="start">
-          <div class="section-heading">
-            <p class="section-label">Before you start</p>
-            <h2>What you actually need.</h2>
-          </div>
-
-          <div class="stack-grid simple-start-grid">
-            <article class="stack-card featured">
-              <p class="stack-index">01</p>
-              <h3>A GitHub account</h3>
-              <p>
-                You need your own repository before you can push your changes
-                and enable GitHub Pages.
-              </p>
-              <span class="chip">Required</span>
-            </article>
-
-            <article class="stack-card">
-              <p class="stack-index">02</p>
-              <h3>Edit and publish with AI</h3>
-              <p>
-                Open the repo in Codex and ask it to turn the
-                starter into your landing page. Codex can also
-                generate images directly for the page.
-              </p>
-              <span class="chip chip-soft">Required</span>
-            </article>
-
-            <article class="stack-card">
-              <p class="stack-index">03</p>
-              <h3>Custom domain</h3>
-              <p>
-                Hosting can stay free on GitHub Pages. Your custom domain is
-                part of the default path, but the domain itself is usually paid
-                separately.
-              </p>
-              <span class="chip chip-dark">Required</span>
-            </article>
-          </div>
-          <div class="decision-banner">
-            <span>If you only remember one thing</span>
-            First make your own repo on GitHub. Then clone your repo and edit
-            the root files.
-          </div>
-        </section>
-
-        <section class="panel accent" id="steps">
-          <div class="section-heading">
-            <p class="section-label">Step by step</p>
-            <h2>Do these 6 things in order.</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-step">
-              <div class="timeline-number">1</div>
-              <div class="timeline-copy">
-                <h3>Create your own repo on GitHub</h3>
-                <p>
-                  Open this repo on GitHub and click <code>Use this template</code>.
-                  If template mode is not enabled, fork the repo instead.
-                </p>
-                <p class="step-result">
-                  <strong>Use this URL:</strong>
-                  <code>github.com/danlex/codex-free-website</code><br />
-                  <strong>Not this one:</strong>
-                  <code>danlex.github.io/codex-free-website</code>
-                </p>
-                <p class="step-result"><strong>Result:</strong> you now have your own copy of <code>codex-free-website</code> on GitHub.</p>
-                <div class="screenshot-placeholder">
-                  <strong>Screenshot 1</strong>
-                  <span>GitHub repo page showing <code>Use this template</code> or <code>Fork</code>.</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-step">
-              <div class="timeline-number">2</div>
-              <div class="timeline-copy">
-                <h3>Clone your fork or copy</h3>
-                <p>
-                  Clone your own repo, not this public repo. If you keep the
-                  same repo name, the URL will usually end with
-                  <code>codex-free-website.git</code>.
-                </p>
-                <pre><code>git clone https://github.com/your-username/codex-free-website.git
-cd codex-free-website</code></pre>
-                <p class="inline-note">
-                  If you renamed the repo when you created it, use your repo
-                  name instead of <code>codex-free-website</code>.
-                </p>
-                <p class="step-result"><strong>Result:</strong> the project is now on your machine.</p>
-                <div class="screenshot-placeholder">
-                  <strong>Screenshot 2</strong>
-                  <span>Terminal showing the clone command and the project folder open.</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-step">
-              <div class="timeline-number">3</div>
-              <div class="timeline-copy">
-                <h3>Open it in Codex</h3>
-                <p>
-                  Open the repo in Codex. The main files you will
-                  change are:
-                </p>
-                <pre><code>index.html
-styles.css
-script.js</code></pre>
-                <p class="inline-note">
-                  Paste this prompt: “Turn this starter into a landing page for
-                  [business or product]. Create a strong hero, benefits,
-                  proof, CTA, FAQ, and contact section. Keep it plain HTML,
-                  CSS, and JavaScript.”
-                </p>
-                <p class="inline-note">
-                  Using Codex, you can also generate images directly. Example:
-                  “Generate a clean hero image for a landing page about
-                  [business or product]. Style: modern, minimal, premium, white
-                  background with warm orange accents. Format: wide website hero
-                  image.”
-                </p>
-                <p class="step-result"><strong>Result:</strong> the agent rewrites the starter into your landing page.</p>
-                <div class="screenshot-placeholder">
-                  <strong>Screenshot 3</strong>
-                  <span>Codex opened in the repo with the page prompt visible. Optional: show the image generation prompt too.</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-step">
-              <div class="timeline-number">4</div>
-              <div class="timeline-copy">
-                <h3>Preview the site locally</h3>
-                <p>
-                  Start the local preview server, then open the site in your
-                  browser before you push anything.
-                </p>
-                <pre><code>sh scripts/preview.sh</code></pre>
-                <p class="step-result"><strong>Result:</strong> you can review the site at <code>http://localhost:8000</code>.</p>
-                <div class="screenshot-placeholder">
-                  <strong>Screenshot 4</strong>
-                  <span>Your browser open at <code>http://localhost:8000</code> with the edited page visible.</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-step">
-              <div class="timeline-number">5</div>
-              <div class="timeline-copy">
-                <h3>Push your changes to GitHub</h3>
-                <p>
-                  After you review the edits, commit them and push them to your
-                  own repository.
-                </p>
-                <pre><code>git add .
-git commit -m "Customize landing page"
-git push</code></pre>
-                <p class="step-result"><strong>Result:</strong> your updated files are now on GitHub.</p>
-                <div class="screenshot-placeholder">
-                  <strong>Screenshot 5</strong>
-                  <span>GitHub showing the updated files or latest commit on <code>main</code>.</span>
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-step">
-              <div class="timeline-number">6</div>
-              <div class="timeline-copy">
-                <h3>Enable GitHub Pages</h3>
-                <p>
-                  In your GitHub repo, open the Pages settings and publish from
-                  the root of the <code>main</code> branch.
-                </p>
-                <pre><code>Settings > Pages
-Deploy from a branch
-Branch: main
-/ (root)</code></pre>
-                <p class="step-result"><strong>Result:</strong> your landing page gets a live GitHub Pages URL.</p>
-                <div class="screenshot-placeholder">
-                  <strong>Screenshot 6</strong>
-                  <span>GitHub Pages settings showing <code>main</code> and <code>/ (root)</code>.</span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="panel" id="domain">
-          <div class="section-heading">
-            <p class="section-label">Custom domain</p>
-            <h2>Add your domain after the site is live.</h2>
-          </div>
-
-          <div class="domain-grid">
-            <article class="domain-card">
-              <h3>1. Add the domain in GitHub</h3>
-              <p>
-                In <code>Settings</code> &gt; <code>Pages</code>, add your custom
-                domain. GitHub can create the <code>CNAME</code> file for branch
-                publishing, or you can rename <code>CNAME.example</code> to
-                <code>CNAME</code> yourself.
-              </p>
-            </article>
-
-            <article class="domain-card">
-              <h3>2. Update DNS</h3>
-              <p>
-                For <code>www.yourdomain.com</code>, create a <code>CNAME</code>
-                to <code>your-username.github.io</code>. For an apex domain like
-                <code>yourdomain.com</code>, use GitHub Pages <code>A</code>
-                records.
-              </p>
-            </article>
-
-            <article class="domain-card">
-              <h3>3. Wait for HTTPS</h3>
-              <p>
-                DNS can take time to propagate. When GitHub shows the option,
-                enable HTTPS.
-              </p>
-            </article>
-          </div>
-
-          <div class="domain-proof">
-            <p class="step-result">
-              <strong>Important:</strong> GitHub Pages hosting can be free for
-              public repositories. Your custom domain is usually a separate
-              paid purchase from your domain provider.
-            </p>
-            <div class="screenshot-placeholder">
-              <strong>Screenshot 7</strong>
-              <span>GitHub Pages custom domain field and your DNS provider records.</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="panel simple-note" id="tvl-tech">
-          <p class="section-label">TVL Tech</p>
-          <h2>Clear product flows, less unnecessary tooling.</h2>
-          <p>
-            This starter uses TVL Tech’s visual direction, but the tutorial
-            flow is intentionally stripped down so beginners can follow it
-            without guessing.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="https://www.tvl.tech/">Visit TVL Tech</a>
-            <a class="button secondary" href="https://github.com/danlex/codex-free-website">Open the repo</a>
-          </div>
-        </section>
-
-        <section class="cta-strip">
-          <p class="cta-kicker">The simple version</p>
-          <h2>Make your own repo. Clone it. Ask the agent to customize it. Publish it.</h2>
-          <p>
-            That is the path. Everything else is optional.
-          </p>
-        </section>
-      </main>
-    </div>
+  <body>
+    <main>
+      <h1>Quickstart moved</h1>
+      <p>
+        The template-first quickstart now lives on the homepage and in
+        <a href="https://github.com/danlex/codex-free-website/blob/main/QUICKSTART.md">QUICKSTART.md</a>.
+      </p>
+      <p>
+        If you are not redirected automatically, open
+        <a href="./#quickstart">the quickstart section</a>.
+      </p>
+    </main>
   </body>
 </html>

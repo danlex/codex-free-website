@@ -1,68 +1,76 @@
 # Codex Free Website
 
-Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
-Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
+Build a free website with AI using Codex and GitHub Pages.
 
-## 1. Make your own copy on GitHub
+- Use This Template: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
+- Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
+- Screenshot guide: [QUICKSTART.md](QUICKSTART.md)
 
-Open [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website) and click `Use this template`.
-If you do not see it, fork the repo instead.
+## The one path
 
-## 2. Clone your fork or copy of this repo
+1. Use This Template on GitHub
+2. Clone your fork or copy of `codex-free-website`
+3. Open the repo in Codex
+4. Use one of the prompt recipes in [`prompts/`](prompts/)
+5. Preview locally
+6. Push to GitHub
+7. Enable GitHub Pages
+8. Add your custom domain
+9. Verify HTTPS is active
 
-After you fork or use the template, you will have your own copy of
-`codex-free-website` on GitHub.
+If template mode is not enabled on GitHub, fork the repo instead.
 
-If you keep the same repo name, the clone URL will usually look like this:
+## Clone your copy
+
+If you keep the same repo name, the clone command will usually look like this:
 
 ```bash
 git clone https://github.com/your-username/codex-free-website.git
 cd codex-free-website
 ```
 
-If you rename the repo, replace `codex-free-website` with your repo name.
+If you renamed the repo, replace `codex-free-website` with your repo name.
 
-## 3. Edit and publish with AI in Codex
+## Use Codex
 
-Edit the root files:
+The main files to edit are:
 
 - `index.html`
 - `styles.css`
 - `script.js`
-- `CNAME.example`
 
-Paste a prompt like this:
+Prompt recipes:
 
-```text
-Turn this starter into a personal website for [name], a [role].
-Update the hero, about section, projects, contact links, and SEO copy.
-Keep it plain HTML, CSS, and JavaScript.
-```
+- [personal-website.md](prompts/personal-website.md)
+- [portfolio.md](prompts/portfolio.md)
+- [landing-page.md](prompts/landing-page.md)
 
-With Codex, you can also generate images directly.
+Codex can also generate images directly for the site.
 
-Example:
-
-```text
-Generate a clean hero image for a landing page about [business or product].
-Style: modern, minimal, premium, white background with warm orange accents.
-Format: wide website hero image.
-```
-
-## 4. Preview locally
+## Preview locally
 
 ```bash
 sh scripts/preview.sh
 ```
 
-Then open [localhost:8000](http://localhost:8000).
+Then open [http://localhost:8000](http://localhost:8000).
 
-## 5. Push and publish
+## Publish with GitHub Pages
 
-1. Push to GitHub
-2. Enable GitHub Pages
-3. Add your custom domain
+1. Commit and push your changes
+2. In GitHub, open `Settings` > `Pages`
+3. Choose `Deploy from a branch`
+4. Select `main` and `/ (root)`
+5. Add your custom domain
+6. Wait for GitHub to enable HTTPS
 
-GitHub Pages hosting can stay free. The domain itself is usually paid separately.
+GitHub Pages hosting can stay free. The custom domain itself is usually a separate purchase from your domain provider.
 
-Guide: [QUICKSTART.md](QUICKSTART.md)
+## What is included
+
+- Static starter files in the repo root
+- A one-command local preview script
+- Three ready-to-copy Codex prompt recipes
+- A screenshot-first quickstart guide
+- A `CNAME.example` file for domain setup
+- Repo-level Codex guidance in `AGENTS.md` and `.agents/skills`

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#F5F5F7"/>
+  <rect x="72" y="72" width="1456" height="856" rx="40" fill="#FFFFFF" stroke="#E7E7EA" stroke-width="4"/>
+  <text x="128" y="160" fill="#FF4931" font-family="JetBrains Mono, monospace" font-size="26" letter-spacing="3">SCREENSHOT 04</text>
+  <text x="128" y="272" fill="#101010" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800">Paste a prompt recipe</text>
+  <rect x="128" y="352" width="1344" height="452" rx="32" fill="#101010"/>
+  <text x="176" y="432" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="30">Turn this repository into a landing page for [product or business].</text>
+  <text x="176" y="486" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="30">Keep it static HTML, CSS, and vanilla JavaScript only.</text>
+  <text x="176" y="540" fill="#FFFFFF" font-family="JetBrains Mono, monospace" font-size="30">Create a clear hero, benefits, proof, CTA, FAQ, and contact section.</text>
+  <text x="176" y="620" fill="#8A8E97" font-family="Inter, Arial, sans-serif" font-size="32">Replace this with a real screenshot of a prompt pasted into Codex.</text>
+</svg>
