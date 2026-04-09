@@ -1,6 +1,7 @@
 # Quickstart
 
 This guide is the screenshot-first path from template to live site.
+The live homepage is the starter preview you will rewrite.
 
 - Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
 - Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)

@@ -1,10 +1,10 @@
-# Free Website
+# Free Website Starter
 
 Build a free website with AI using Codex and GitHub Pages.
 
 - Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
 - View Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
-- Live site: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
+- Live starter preview: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
 - Screenshot guide: [QUICKSTART.md](QUICKSTART.md)
 
 ## The one path
@@ -39,6 +39,8 @@ The main files to edit are:
 - `index.html`
 - `styles.css`
 - `script.js`
+
+The homepage is the starter itself. Replace the bracketed placeholder copy and remove any sections you do not need.
 
 Prompt recipes:
 

@@ -1,7 +1,7 @@
 {
-  "name": "Free Website",
-  "short_name": "Free Website",
-  "description": "A template-first Codex and GitHub Pages launch kit for building a free website with AI.",
+  "name": "Free Website Starter",
+  "short_name": "Starter",
+  "description": "A static website starter for building a free site with Codex and GitHub Pages.",
   "start_url": "/free-website/",
   "display": "standalone",
   "background_color": "#f5f5f7",

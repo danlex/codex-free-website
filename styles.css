@@ -209,7 +209,6 @@ h3 {
 .lead,
 .workflow-card p,
 .included-card p,
-.shot-card p,
 .faq-item p,
 .final-cta p,
 .hero-note,
@@ -330,6 +329,27 @@ h3 {
   padding-left: 22px;
 }
 
+.helper-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.helper-list li {
+  padding-left: 18px;
+  position: relative;
+}
+
+.helper-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.78em;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
 .path-list li::marker {
   color: var(--accent);
   font-weight: 700;
@@ -369,9 +389,9 @@ h3 {
 }
 
 .workflow-grid,
+.command-grid,
 .recipe-grid,
-.included-grid,
-.screenshot-grid {
+.included-grid {
   display: grid;
   gap: 18px;
 }
@@ -380,10 +400,14 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.command-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .workflow-card,
+.command-card,
 .recipe-card,
-.included-card,
-.shot-card {
+.included-card {
   padding: 22px;
   border-radius: 24px;
   border: 1px solid var(--line);
@@ -455,27 +479,6 @@ h3 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.screenshot-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  align-items: start;
-}
-
-.shot-card {
-  display: grid;
-  gap: 14px;
-}
-
-.shot-card img {
-  width: 100%;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  background: var(--surface-soft);
-}
-
-.shot-card h3 {
-  font-size: 1.12rem;
-}
-
 .quickstart-actions {
   display: flex;
   justify-content: center;
@@ -487,6 +490,40 @@ h3 {
   color: var(--muted);
   line-height: 1.7;
   text-align: center;
+}
+
+.command-card {
+  display: grid;
+  gap: 14px;
+}
+
+.command-card pre {
+  margin: 0;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: #101010;
+  color: #f4f4f7;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.resource-links {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.resource-links a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.resource-links a:hover,
+.resource-links a:focus-visible {
+  color: var(--accent);
 }
 
 .faq-list {
@@ -560,7 +597,8 @@ h3 {
   }
 
   .hero,
-  .recipe-grid {
+  .recipe-grid,
+  .command-grid {
     grid-template-columns: 1fr;
   }
 
@@ -568,8 +606,7 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .included-grid,
-  .screenshot-grid {
+  .included-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -587,7 +624,8 @@ h3 {
   }
 
   .workflow-grid,
-  .screenshot-grid {
+  .command-grid,
+  .included-grid {
     grid-template-columns: 1fr;
   }
 
