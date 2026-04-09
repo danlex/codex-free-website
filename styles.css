@@ -112,8 +112,25 @@ summary code {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   color: #ffffff;
   font-weight: 700;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 26px;
+  flex: 0 0 auto;
+}
+
+.brand-context {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .site-nav {
@@ -598,6 +615,14 @@ h3 {
 @media (max-width: 620px) {
   .site-header {
     padding: 14px;
+  }
+
+  .brand {
+    flex-wrap: wrap;
+  }
+
+  .brand-context {
+    width: 100%;
   }
 
   .site-nav {
