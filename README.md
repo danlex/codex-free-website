@@ -1,8 +1,9 @@
-# Codex Free Website
+# Free Website
 
 Build a free website with AI using Codex and GitHub Pages.
 
-- Use This Template: [github.com/danlex/free-website](https://github.com/danlex/free-website)
+- Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
+- View Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
 - Live site: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
 - Screenshot guide: [QUICKSTART.md](QUICKSTART.md)
 
@@ -45,6 +46,7 @@ Prompt recipes:
 - [portfolio.md](prompts/portfolio.md)
 - [landing-page.md](prompts/landing-page.md)
 
+If you want the fastest path, start with [landing-page.md](prompts/landing-page.md).
 Codex can also generate images directly for the site.
 
 ## Preview locally

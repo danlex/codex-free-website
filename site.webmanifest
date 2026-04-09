@@ -1,6 +1,6 @@
 {
-  "name": "Codex Free Website",
-  "short_name": "Codex Free",
+  "name": "Free Website",
+  "short_name": "Free Website",
   "description": "A template-first Codex and GitHub Pages launch kit for building a free website with AI.",
   "start_url": "/free-website/",
   "display": "standalone",

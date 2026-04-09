@@ -3,6 +3,7 @@
 This guide is the screenshot-first path from template to live site.
 
 - Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
+- Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
 - Live site: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
 
 ## 1. Use This Template on GitHub
@@ -44,6 +45,7 @@ Choose one of these:
 - [portfolio.md](prompts/portfolio.md)
 - [landing-page.md](prompts/landing-page.md)
 
+If you want the simplest starting point, use `landing-page.md` first.
 Codex can also generate images directly if you need a hero image or supporting visuals.
 
 ![Screenshot 4](assets/screenshots/04-paste-prompt.svg)

@@ -130,7 +130,7 @@ summary code {
   color: rgba(255, 255, 255, 0.78);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .site-nav {
@@ -208,7 +208,6 @@ h3 {
 
 .lead,
 .workflow-card p,
-.card p,
 .included-card p,
 .shot-card p,
 .faq-item p,
@@ -285,6 +284,17 @@ h3 {
   max-width: 56ch;
 }
 
+.hero-note a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-note a:hover,
+.hero-note a:focus-visible {
+  color: var(--accent);
+}
+
 .pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -359,7 +369,6 @@ h3 {
 }
 
 .workflow-grid,
-.split-grid,
 .recipe-grid,
 .included-grid,
 .screenshot-grid {
@@ -368,11 +377,10 @@ h3 {
 }
 
 .workflow-grid {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .workflow-card,
-.card,
 .recipe-card,
 .included-card,
 .shot-card {
@@ -393,35 +401,6 @@ h3 {
   background: #101010;
   color: #ffffff;
   font-size: 0.84rem;
-}
-
-.split-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.check-list {
-  display: grid;
-  gap: 10px;
-  margin: 18px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.check-list li {
-  padding-left: 18px;
-  position: relative;
-  color: var(--muted);
-}
-
-.check-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.7em;
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: var(--accent);
 }
 
 .recipe-grid {
@@ -473,11 +452,11 @@ h3 {
 }
 
 .included-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .screenshot-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: start;
 }
 
@@ -499,8 +478,15 @@ h3 {
 
 .quickstart-actions {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 22px;
+}
+
+.quickstart-note {
+  margin: 20px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+  text-align: center;
 }
 
 .faq-list {
@@ -574,16 +560,15 @@ h3 {
   }
 
   .hero,
-  .split-grid,
-  .recipe-grid,
-  .included-grid {
+  .recipe-grid {
     grid-template-columns: 1fr;
   }
 
   .workflow-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .included-grid,
   .screenshot-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
