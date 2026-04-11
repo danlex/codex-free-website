@@ -399,6 +399,14 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.hero-panel-image {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e7e3de;
+  background: #f7f6f4;
+  margin-bottom: 18px;
+}
+
 .path-list {
   display: grid;
   gap: 10px;
@@ -473,6 +481,38 @@ body.is-repo-demo .hero-actions.demo-only {
 
 .section-heading {
   margin-bottom: 36px;
+}
+
+.image-showcase {
+  padding-top: 40px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.image-card {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
+
+.image-card figcaption {
+  padding: 14px 16px;
+  font-family: var(--display);
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .split-grid,
@@ -622,7 +662,8 @@ body.is-repo-demo .hero-actions.demo-only {
   .split-grid,
   .feature-grid,
   .proof-grid,
-  .command-grid {
+  .command-grid,
+  .image-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -679,6 +720,10 @@ body.is-repo-demo .hero-actions.demo-only {
 
   .hero::before {
     display: none;
+  }
+
+  .image-showcase {
+    padding-top: 28px;
   }
 
   .hero-actions,
