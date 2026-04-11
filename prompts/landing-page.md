@@ -16,6 +16,8 @@ Please:
 - Add benefits, proof, CTA, FAQ, and contact sections
 - Keep the copy concise and conversion-focused
 - Add one primary CTA throughout the page
-- Update the page title, meta description, and social copy
+- Update title, meta description, canonical URL, and social metadata
+- Update favicon references and OG/Twitter image references for my brand
+- Remove demo-domain references and keep the site ready for my custom domain
 - Keep the code readable and simple
 ```

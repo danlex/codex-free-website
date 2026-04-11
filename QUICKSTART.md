@@ -56,6 +56,13 @@ Alternative prompts:
 
 Codex can also generate images directly if you need a hero image or supporting visuals.
 
+Before moving on, ask Codex to also update:
+
+- `<title>` and `meta description`
+- `og:image` / `twitter:image`
+- favicon assets and references
+- any remaining demo domain references
+
 ![Screenshot 4](assets/screenshots/04-paste-prompt.svg)
 
 ## 5. Run local preview
@@ -74,6 +81,12 @@ Open [http://localhost:8000](http://localhost:8000) and review the page before y
 git add .
 git commit -m "Customize website"
 git push
+```
+
+Optional quick check before commit:
+
+```bash
+git status
 ```
 
 ![Screenshot 6](assets/screenshots/06-push-changes.svg)

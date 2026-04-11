@@ -69,6 +69,16 @@ sh scripts/preview.sh
 
 Open [http://localhost:8000](http://localhost:8000).
 
+## Pre-publish checklist (2 minutes)
+
+Before you push, confirm:
+
+1. `index.html` title and meta description match your real website
+2. `og:image`, `twitter:image`, and favicon files reflect your brand
+3. Demo domain references are replaced (metadata and `CNAME`)
+4. Primary CTA and contact links point to real destinations
+5. Mobile view is readable (headline, buttons, nav, spacing)
+
 ## Publish on GitHub Pages
 
 1. Commit and push your changes

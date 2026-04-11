@@ -15,6 +15,8 @@ Please:
 - Rewrite the hero, about, proof, and contact sections
 - Add a short bio and a clear personal positioning statement
 - Add links for email, GitHub, LinkedIn, and one additional channel
-- Update the page title, meta description, and social copy
+- Update title, meta description, canonical URL, and social metadata
+- Update favicon references and OG/Twitter image references for my brand
+- Remove demo-domain references and keep the site ready for my custom domain
 - Keep the code readable and simple
 ```

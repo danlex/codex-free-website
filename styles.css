@@ -36,6 +36,25 @@ a {
   color: inherit;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -64px;
+  z-index: 100;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+.skip-link:focus {
+  top: 14px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -219,6 +238,13 @@ body.is-repo-demo .brand-demo {
   color: var(--accent);
   border-color: rgba(255, 73, 49, 0.24);
   background: #fff6f4;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .hero,
@@ -504,6 +530,7 @@ body.is-repo-demo .hero-actions.demo-only {
   padding: 72px 0;
   border: 0;
   background: transparent;
+  scroll-margin-top: 110px;
 }
 
 .section-heading {
@@ -708,6 +735,12 @@ body.is-repo-demo .hero-actions.demo-only {
   gap: 14px;
 }
 
+.command-card .helper-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
 .quickstart-note {
   margin: 20px 0 0;
   text-align: center;
@@ -842,6 +875,7 @@ body.is-repo-demo .hero-actions.demo-only {
 
   .section {
     padding: 56px 0;
+    scroll-margin-top: 88px;
   }
 }
 
@@ -895,5 +929,21 @@ body.is-repo-demo .hero-actions.demo-only {
   .button,
   .button-small {
     width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button,
+  .reveal {
+    transition: none;
+  }
+
+  .button:hover,
+  .button:focus-visible {
+    transform: none;
   }
 }

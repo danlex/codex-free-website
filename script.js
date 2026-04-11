@@ -25,10 +25,11 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
 if ("IntersectionObserver" in window && !prefersReducedMotion) {
   const observer = new IntersectionObserver(
-    (entries) => {
+    (entries, currentObserver) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
+          currentObserver.unobserve(entry.target);
         }
       });
     },
