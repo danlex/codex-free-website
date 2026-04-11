@@ -86,9 +86,10 @@ In GitHub:
 
 ## 8. Add a custom domain
 
-1. In GitHub, open `Settings` > `Pages` and enter your custom domain
-2. Optionally rename `CNAME.example` to `CNAME` so the domain stays in the repo
-3. Update your DNS records
+1. Open the repo root and check `CNAME`
+2. If it still says `free-website.tvl.tech`, replace it with your own domain or delete it for now
+3. In GitHub, open `Settings` > `Pages` and enter your custom domain
+4. Update your DNS records
 
 ![Screenshot 8](assets/screenshots/08-add-custom-domain.svg)
 

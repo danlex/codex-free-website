@@ -9,6 +9,17 @@ Build a free website with AI using Codex and GitHub Pages.
 
 The live homepage is the starter itself. On the public repo preview, a small top banner links to the template and docs. Cloned sites do not show that banner.
 
+## Important before you publish
+
+This repo keeps a real `CNAME` file so the public demo can stay live at `free-website.tvl.tech`.
+
+In your own copy:
+
+- replace `CNAME` with your own domain
+- or delete `CNAME` until you are ready to connect one
+
+If you skip that step, GitHub Pages will try to publish your copy using the wrong domain.
+
 ## The one path
 
 1. Use This Template on GitHub
@@ -67,8 +78,9 @@ Then open [http://localhost:8000](http://localhost:8000).
 2. In GitHub, open `Settings` > `Pages`
 3. Choose `Deploy from a branch`
 4. Select `main` and `/ (root)`
-5. Add your custom domain
-6. Wait for GitHub to enable HTTPS
+5. Replace or delete `CNAME` if it still says `free-website.tvl.tech`
+6. Add your custom domain
+7. Wait for GitHub to enable HTTPS
 
 GitHub Pages hosting can stay free. The custom domain itself is usually a separate purchase from your domain provider.
 
@@ -78,5 +90,5 @@ GitHub Pages hosting can stay free. The custom domain itself is usually a separa
 - A one-command local preview script
 - Three ready-to-copy Codex prompt recipes
 - A screenshot-first quickstart guide
-- A `CNAME.example` file for domain setup
+- A live `CNAME` for the public demo plus `CNAME.example` as a reference
 - Repo-level Codex guidance in `AGENTS.md` and `.agents/skills`

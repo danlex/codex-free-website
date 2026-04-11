@@ -10,8 +10,8 @@
   <text x="204" y="494" fill="#101010" font-family="Inter, Arial, sans-serif" font-size="31">www.yourdomain.com</text>
   <rect x="166" y="552" width="220" height="68" rx="18" fill="#FF4931"/>
   <text x="224" y="596" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Save</text>
-  <text x="166" y="680" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="28">If you want the domain tracked in git, rename</text>
-  <text x="166" y="720" fill="#101010" font-family="JetBrains Mono, monospace" font-size="28">CNAME.example → CNAME</text>
+  <text x="166" y="680" fill="#5E6168" font-family="Inter, Arial, sans-serif" font-size="28">Check the existing domain file before you enable Pages:</text>
+  <text x="166" y="720" fill="#101010" font-family="JetBrains Mono, monospace" font-size="28">CNAME → yourdomain.com</text>
 
   <rect x="1020" y="342" width="460" height="520" rx="32" fill="#101010"/>
   <text x="1062" y="402" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">DNS records</text>
