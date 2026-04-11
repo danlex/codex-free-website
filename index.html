@@ -124,11 +124,14 @@
         </a>
         <nav class="site-nav">
           <a href="#why">Why</a>
-          <a href="#about">About</a>
-          <a href="#offer">Offer</a>
-          <a href="#proof">Proof</a>
+          <a class="template-only" href="#about">About</a>
+          <a class="template-only" href="#offer">Offer</a>
+          <a class="template-only" href="#proof">Proof</a>
+          <a class="demo-only" href="#compare">Compare</a>
+          <a class="demo-only" href="#quickstart">Steps</a>
           <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
+          <a class="template-only" href="#contact">Contact</a>
+          <a class="demo-only" href="#contact">Start</a>
         </nav>
         <a class="button button-small button-primary template-only" href="#contact">Start a Project</a>
         <a class="button button-small button-primary demo-only demo-inline-flex" href="https://github.com/danlex/free-website/generate">Use This Template</a>
@@ -218,6 +221,7 @@
                 <li>Run a local preview before you publish</li>
                 <li>Push to GitHub and enable Pages from <code>main</code></li>
                 <li>Verify your domain, then replace <code>CNAME</code></li>
+                <li>Compare tradeoffs with Carrd, Framer, and Webflow below</li>
               </ul>
               <div class="panel-command">
                 <p class="panel-command-label">Best first prompt</p>
@@ -281,7 +285,7 @@
         </section>
 
         <!-- Replace this section with your own explanation, positioning, or about copy. -->
-        <section class="section reveal" id="about">
+        <section class="section reveal template-only" id="about">
           <div class="section-heading">
             <p class="section-label">About</p>
             <h2>Explain what you do in plain language.</h2>
@@ -311,7 +315,7 @@
         </section>
 
         <!-- Replace these cards with your services, offers, plans, or feature list. -->
-        <section class="section reveal" id="offer">
+        <section class="section reveal template-only" id="offer">
           <div class="section-heading">
             <p class="section-label">Offer</p>
             <h2>Show three clear things you help with.</h2>
@@ -336,7 +340,7 @@
         </section>
 
         <!-- Replace this with testimonials, results, logos, numbers, or examples of work. -->
-        <section class="section reveal" id="proof">
+        <section class="section reveal template-only" id="proof">
           <div class="section-heading">
             <p class="section-label">Proof</p>
             <h2>Give people a reason to trust you.</h2>
@@ -356,6 +360,79 @@
               <p class="recipe-kicker">Trust</p>
               <h3>Show logos, client names, certifications, or selected work.</h3>
               <p>If you do not have testimonials yet, use this area for examples, screenshots, or a short case study summary.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal demo-only compare-section" id="compare">
+          <div class="section-heading">
+            <p class="section-label">Competitor Snapshot</p>
+            <h2>How this starter compares with popular website builders.</h2>
+            <p class="compare-meta">Reviewed on April 11, 2026 from official docs and pricing pages.</p>
+          </div>
+          <div class="compare-grid">
+            <article class="compare-card compare-card-primary">
+              <p class="recipe-kicker">This starter</p>
+              <h3>Codex + GitHub Pages</h3>
+              <ul class="compare-list">
+                <li>Static HTML/CSS/JS and full code ownership</li>
+                <li>Branch publishing from <code>main</code> and <code>/ (root)</code></li>
+                <li>Custom domain and HTTPS supported on GitHub Pages</li>
+                <li>No mandatory platform subscription for hosting</li>
+              </ul>
+            </article>
+            <article class="compare-card">
+              <p class="recipe-kicker">Carrd</p>
+              <h3>Fast one-page builder</h3>
+              <ul class="compare-list">
+                <li>Custom domain publishing requires Pro Standard or higher</li>
+                <li>Free/entry path is optimized for Carrd-hosted URLs</li>
+                <li>Great for speed, lower raw code control</li>
+              </ul>
+            </article>
+            <article class="compare-card">
+              <p class="recipe-kicker">Framer</p>
+              <h3>Design-first editor</h3>
+              <ul class="compare-list">
+                <li>Free plan exists, but custom domain requires paid plan</li>
+                <li>Strong visual workflow and built-in CMS options</li>
+                <li>Good fit for design-heavy marketing teams</li>
+              </ul>
+            </article>
+            <article class="compare-card">
+              <p class="recipe-kicker">Webflow</p>
+              <h3>Visual CMS platform</h3>
+              <ul class="compare-list">
+                <li>Starter plan publishes to <code>webflow.io</code></li>
+                <li>Custom domain launch requires a paid Site plan</li>
+                <li>Powerful CMS and collaboration, steeper complexity</li>
+              </ul>
+            </article>
+          </div>
+          <p class="compare-sources">
+            Sources:
+            <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">GitHub Pages publish source</a>,
+            <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">GitHub custom domain</a>,
+            <a href="https://carrd.co/docs/sites/using-a-custom-domain">Carrd custom domain requirements</a>,
+            <a href="https://www.framer.com/pricing">Framer pricing</a>,
+            <a href="https://webflow.com/pricing">Webflow pricing</a>.
+          </p>
+          <div class="split-grid compare-fit">
+            <article class="card">
+              <p class="panel-label">Choose this starter when</p>
+              <ul class="helper-list">
+                <li>You want full source ownership and portability</li>
+                <li>You want free hosting and your own domain setup</li>
+                <li>You prefer prompting Codex over visual dragging</li>
+              </ul>
+            </article>
+            <article class="card">
+              <p class="panel-label">Choose a builder when</p>
+              <ul class="helper-list">
+                <li>You need visual editing by non-technical teammates</li>
+                <li>You need built-in CMS and editor permissions immediately</li>
+                <li>You accept platform plan costs as the speed tradeoff</li>
+              </ul>
             </article>
           </div>
         </section>
@@ -462,15 +539,24 @@ git push</pre>
 
         <!-- Replace this final section with your own contact or conversion block. -->
         <section class="final-cta reveal" id="contact">
-          <p class="section-label">Contact</p>
-          <h2>Make the next step obvious.</h2>
-          <p>
+          <p class="section-label template-only">Contact</p>
+          <p class="section-label demo-only">Start</p>
+          <h2 class="template-only">Make the next step obvious.</h2>
+          <h2 class="demo-only">Use this template and launch your own website in one session.</h2>
+          <p class="template-only">
             Replace this with your booking link, email, contact form, waitlist,
             or the one action you actually want a visitor to take.
           </p>
-          <div class="hero-actions">
+          <p class="demo-only">
+            Use template, edit with Codex, run local preview, push to GitHub, enable Pages, add domain, and wait for HTTPS.
+          </p>
+          <div class="hero-actions template-only">
             <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
             <a class="button button-secondary" href="#offer">See the Offer</a>
+          </div>
+          <div class="hero-actions demo-only">
+            <a class="button button-primary" href="https://github.com/danlex/free-website/generate">Use This Template</a>
+            <a class="button button-secondary" href="https://github.com/danlex/free-website/blob/main/QUICKSTART.md">Open Quickstart</a>
           </div>
         </section>
       </main>

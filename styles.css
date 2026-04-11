@@ -305,7 +305,9 @@ h3 {
 .hero-note,
 .path-list li,
 .repo-banner-copy,
-.quickstart-note {
+.quickstart-note,
+.compare-meta,
+.compare-sources {
   color: var(--muted);
   line-height: 1.7;
   font-size: 0.98rem;
@@ -544,6 +546,76 @@ body.is-repo-demo .hero-actions.demo-only {
   margin-top: 20px;
 }
 
+.compare-section {
+  padding-top: 16px;
+}
+
+.compare-meta {
+  margin: 10px 0 0;
+  max-width: 70ch;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.compare-card {
+  padding: 24px 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.compare-card-primary {
+  border-color: rgba(255, 73, 49, 0.32);
+  background: linear-gradient(180deg, rgba(255, 73, 49, 0.06) 0%, #ffffff 42%);
+}
+
+.compare-card h3 {
+  margin-bottom: 12px;
+}
+
+.compare-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.compare-list li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.compare-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.68em;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.compare-sources {
+  margin: 18px 0 0;
+}
+
+.compare-sources a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.compare-fit {
+  margin-top: 18px;
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -701,11 +773,11 @@ body.is-repo-demo .hero-actions.demo-only {
 }
 
 .final-cta h2 {
-  max-width: 10ch;
+  max-width: 15ch;
 }
 
 .final-cta p {
-  max-width: 52ch;
+  max-width: 62ch;
 }
 
 .reveal {
@@ -743,6 +815,7 @@ body.is-repo-demo .hero-actions.demo-only {
   .hero,
   .split-grid,
   .value-grid,
+  .compare-grid,
   .feature-grid,
   .proof-grid,
   .command-grid,

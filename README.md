@@ -19,6 +19,17 @@ Build a free website with Codex and GitHub Pages.
 
 If template mode is not enabled on GitHub, fork as fallback.
 
+## Why this route vs builders
+
+As of April 11, 2026 (official docs/pricing pages):
+
+- Carrd: custom domain publishing requires Pro Standard or higher
+- Framer: free plan exists, but custom domain starts on paid site plans
+- Webflow: Starter publishes on `webflow.io`; custom domain requires paid Site plan
+- GitHub Pages: supports branch publishing, custom domains, and HTTPS
+
+This starter is for people who want full source control, no framework lock-in, and a free hosting path with GitHub Pages.
+
 ## Clone the right thing
 
 Do not clone `https://free-website.tvl.tech/`.
@@ -73,6 +84,14 @@ GitHub Pages hosting can stay free.
 Your domain is usually a separate purchase.
 GitHub recommends verifying the custom domain before adding it:
 [Verifying your custom domain for GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
+
+Reference links used in this repo:
+
+- [GitHub Pages publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [GitHub Pages custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+- [Carrd custom domain docs](https://carrd.co/docs/sites/using-a-custom-domain)
+- [Framer pricing](https://www.framer.com/pricing)
+- [Webflow pricing](https://webflow.com/pricing)
 
 ## Important CNAME note
 
