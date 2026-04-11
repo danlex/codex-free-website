@@ -19,5 +19,6 @@ Please:
 - Update title, meta description, canonical URL, and social metadata
 - Update favicon references and OG/Twitter image references for my brand
 - Remove demo-domain references and keep the site ready for my custom domain
+- Run `sh scripts/prepublish-check.sh --strict` and fix any warnings
 - Keep the code readable and simple
 ```

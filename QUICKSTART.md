@@ -86,6 +86,7 @@ git push
 Optional quick check before commit:
 
 ```bash
+sh scripts/prepublish-check.sh --strict
 git status
 ```
 

@@ -469,12 +469,9 @@ git push</pre>
             </article>
             <article class="command-card">
               <p class="recipe-kicker">Before GitHub Pages</p>
-              <h3>Pre-publish checks in 2 minutes</h3>
-              <ul class="helper-list">
-                <li>Replace demo domain values in metadata and <code>CNAME</code></li>
-                <li>Confirm title, description, OG image, and favicon</li>
-                <li>Verify domain in GitHub before adding it to Pages</li>
-              </ul>
+              <h3>Run pre-publish validation</h3>
+              <pre>sh scripts/prepublish-check.sh --strict</pre>
+              <p>Fix warnings, then verify domain in GitHub and enable Pages.</p>
             </article>
           </div>
           <p class="quickstart-note">The screenshot walkthrough still lives in <code>QUICKSTART.md</code> if you want the full 9-step path.</p>

@@ -79,6 +79,14 @@ Before you push, confirm:
 4. Primary CTA and contact links point to real destinations
 5. Mobile view is readable (headline, buttons, nav, spacing)
 
+Then run:
+
+```bash
+sh scripts/prepublish-check.sh --strict
+```
+
+If warnings are shown, fix them first.
+
 ## Publish on GitHub Pages
 
 1. Commit and push your changes
@@ -118,6 +126,7 @@ If you keep the demo value, your Pages setup will point to the wrong domain.
 
 - Static root starter (HTML/CSS/JS only)
 - One-command local preview script
+- One-command pre-publish validation script
 - `.nojekyll` for branch-based Pages serving
 - 3 copy-ready Codex prompts
 - Screenshot-driven quickstart
