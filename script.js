@@ -7,6 +7,8 @@ if (isRepoDemo) {
   document.body.classList.add("is-repo-demo");
 }
 
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const targetId = link.getAttribute("href");
@@ -17,11 +19,11 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
 
     event.preventDefault();
-    target.scrollIntoView({ behavior: "smooth" });
+    target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth" });
   });
 });
 
-if ("IntersectionObserver" in window) {
+if ("IntersectionObserver" in window && !prefersReducedMotion) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

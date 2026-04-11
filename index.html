@@ -8,7 +8,9 @@
       name="description"
       content="A static website starter you can rewrite with Codex, preview locally, publish on GitHub Pages, and connect to your own domain."
     />
+    <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#101010" />
+    <meta property="og:site_name" content="Free Website Starter" />
     <meta property="og:title" content="Free Website Starter | Codex + GitHub Pages" />
     <meta
       property="og:description"
@@ -17,6 +19,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://free-website.tvl.tech/" />
     <meta property="og:image" content="https://free-website.tvl.tech/og-image.png" />
+    <meta property="og:image:alt" content="Free Website Starter preview with Codex + GitHub Pages flow" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Free Website Starter | Codex + GitHub Pages" />
     <meta
@@ -24,6 +27,7 @@
       content="Use this starter, rewrite it with Codex, preview locally, publish on GitHub Pages, and connect your own domain."
     />
     <meta name="twitter:image" content="https://free-website.tvl.tech/og-image.png" />
+    <meta name="twitter:image:alt" content="Free Website Starter preview with Codex + GitHub Pages flow" />
     <link rel="canonical" href="https://free-website.tvl.tech/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
@@ -36,6 +40,57 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Build a Free Website with Codex and GitHub Pages",
+        "description": "Template-first path to edit a static site with Codex, publish on GitHub Pages, and connect a custom domain.",
+        "totalTime": "PT20M",
+        "step": [
+          { "@type": "HowToStep", "name": "Use template", "text": "Create your own repository from the free-website template." },
+          { "@type": "HowToStep", "name": "Clone repository", "text": "Clone your new repository locally." },
+          { "@type": "HowToStep", "name": "Edit with Codex", "text": "Update index.html, styles.css, and script.js." },
+          { "@type": "HowToStep", "name": "Preview locally", "text": "Run sh scripts/preview.sh and verify on localhost." },
+          { "@type": "HowToStep", "name": "Push changes", "text": "Commit and push the updated static files to GitHub." },
+          { "@type": "HowToStep", "name": "Enable Pages", "text": "Set GitHub Pages source to main branch root." },
+          { "@type": "HowToStep", "name": "Connect domain", "text": "Verify the domain, update CNAME, and configure DNS." },
+          { "@type": "HowToStep", "name": "Confirm HTTPS", "text": "Wait for TLS provisioning and enforce HTTPS." }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a framework or build step?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This template uses static HTML, CSS, and vanilla JavaScript and can publish directly from a branch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use a custom domain with GitHub Pages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Verify your domain in GitHub, update CNAME, configure DNS, and wait for HTTPS provisioning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is free and what usually costs money?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The template and GitHub Pages hosting can stay free. Your custom domain is usually purchased from a domain registrar."
+            }
+          }
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -44,7 +99,7 @@
     <div class="repo-banner" aria-label="Repository actions">
       <div class="repo-banner-inner">
         <p class="repo-banner-copy">
-          This is the public starter preview. Use the template, rewrite the content, and publish when it feels like yours.
+          Public preview of the starter. Use the template, edit with Codex, publish to your own domain.
         </p>
         <div class="repo-banner-actions">
           <a class="button button-small button-primary" href="https://github.com/danlex/free-website/generate">Use This Template</a>
@@ -68,6 +123,7 @@
           </span>
         </a>
         <nav class="site-nav">
+          <a href="#why">Why</a>
           <a href="#about">About</a>
           <a href="#offer">Offer</a>
           <a href="#proof">Proof</a>
@@ -108,6 +164,14 @@
             <p class="hero-note demo-only">
               Hosting can stay free. Your domain is usually a separate purchase.
             </p>
+            <ol class="path-rail demo-only" aria-label="Fast path to launch">
+              <li>Use template</li>
+              <li>Edit with Codex</li>
+              <li>Preview local</li>
+              <li>Push to GitHub</li>
+              <li>Enable Pages</li>
+              <li>Add domain + HTTPS</li>
+            </ol>
             <div class="pill-row template-only">
               <span class="pill">Clear headline</span>
               <span class="pill">Simple offer</span>
@@ -163,6 +227,36 @@
           </aside>
         </section>
 
+        <section class="section reveal value-section" id="why">
+          <div class="section-heading">
+            <p class="section-label template-only">Why this starter works</p>
+            <p class="section-label demo-only">Why people use this flow</p>
+            <h2 class="template-only">Keep the stack simple, and publishing stays fast.</h2>
+            <h2 class="demo-only">The same pattern used by top no-code builders, but fully static.</h2>
+          </div>
+          <div class="value-grid">
+            <article class="value-card">
+              <p class="recipe-kicker">Simple</p>
+              <h3>One-page starter with no build setup</h3>
+              <p>Just edit root files in Codex and preview locally. No framework install and no CI complexity.</p>
+            </article>
+            <article class="value-card">
+              <p class="recipe-kicker">Responsive</p>
+              <h3>Template structure already mobile-friendly</h3>
+              <p>The core layout and spacing are already responsive, so first edits are content and branding, not breakpoints.</p>
+            </article>
+            <article class="value-card">
+              <p class="recipe-kicker">Free hosting</p>
+              <h3>Branch publish with GitHub Pages</h3>
+              <p>Use `main` + root publishing, add your domain, and enable HTTPS once DNS and verification are in place.</p>
+            </article>
+          </div>
+          <div class="value-actions">
+            <a class="button button-primary" href="https://github.com/danlex/free-website/generate">Use This Template</a>
+            <a class="button button-secondary" href="https://github.com/danlex/free-website/blob/main/QUICKSTART.md">View 9-step Quickstart</a>
+          </div>
+        </section>
+
         <section class="section reveal image-showcase" id="examples">
           <div class="section-heading">
             <p class="section-label template-only">Visual examples</p>
@@ -172,15 +266,15 @@
           </div>
           <div class="image-grid">
             <figure class="image-card">
-              <img src="assets/images/example-consultant.svg" alt="Consultant site layout example" />
+              <img src="assets/images/example-consultant.svg" alt="Consultant site layout example" loading="lazy" />
               <figcaption>Consultant / Service website</figcaption>
             </figure>
             <figure class="image-card">
-              <img src="assets/images/example-portfolio.svg" alt="Portfolio website layout example" />
+              <img src="assets/images/example-portfolio.svg" alt="Portfolio website layout example" loading="lazy" />
               <figcaption>Portfolio / Case study website</figcaption>
             </figure>
             <figure class="image-card">
-              <img src="assets/images/example-landing.svg" alt="Landing page layout example" />
+              <img src="assets/images/example-landing.svg" alt="Landing page layout example" loading="lazy" />
               <figcaption>Landing page / Product launch</figcaption>
             </figure>
           </div>
@@ -309,6 +403,19 @@ git push</pre>
             <a class="button button-secondary" href="https://github.com/danlex/free-website/blob/main/QUICKSTART.md"
               >Open QUICKSTART.md</a
             >
+          </div>
+        </section>
+
+        <section class="section reveal tvl-section" id="tvl">
+          <div class="tvl-card">
+            <img class="tvl-wordmark" src="tvl-tech-wordmark.svg" alt="TVL Tech" />
+            <h2>Built with TVL Tech branding as the default visual baseline.</h2>
+            <p>
+              Keep this style if you want the TVL look, or replace colors, type, and imagery with your own brand in one Codex pass.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-secondary" href="https://academy.tvl.tech/">See Academy Branding</a>
+            </div>
           </div>
         </section>
 

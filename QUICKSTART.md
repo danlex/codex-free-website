@@ -1,9 +1,9 @@
 # Quickstart
 
-This guide is the visual path from template to live site.
-The live homepage is the starter preview you will rewrite.
-On the public repo demo, a small top banner links to the template and docs. Cloned sites do not show that banner.
-The images below are guided mockups of each step, so you can see what to look for without needing the exact same screen state.
+This is the visual path from template to live website.
+Target outcome: your own content, on your own GitHub repo, on your own domain.
+
+The screenshots are guided mockups, so your exact UI can look slightly different.
 
 - Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
 - Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
@@ -18,7 +18,10 @@ If template mode is not enabled, fork the repo instead.
 
 ## 2. Clone the repository
 
-If you keep the same repo name, the command will usually look like this:
+Do not clone `https://free-website.tvl.tech/`.
+Clone your own GitHub repo created from the template.
+
+If you keep the same repo name, the command usually looks like:
 
 ```bash
 git clone https://github.com/your-username/free-website.git
@@ -42,13 +45,15 @@ The main files you will edit are:
 
 ## 4. Paste one of the prompt recipes
 
-Choose one of these:
+Recommended first prompt:
 
-- [personal-website.md](prompts/personal-website.md)
-- [portfolio.md](prompts/portfolio.md)
 - [landing-page.md](prompts/landing-page.md)
 
-If you want the simplest starting point, use `landing-page.md` first.
+Alternative prompts:
+
+- [portfolio.md](prompts/portfolio.md)
+- [personal-website.md](prompts/personal-website.md)
+
 Codex can also generate images directly if you need a hero image or supporting visuals.
 
 ![Screenshot 4](assets/screenshots/04-paste-prompt.svg)
